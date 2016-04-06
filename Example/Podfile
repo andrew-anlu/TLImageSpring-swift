@@ -12,4 +12,5 @@ target 'TLImageSpring-swift_Tests', :exclusive => true do
   pod 'Nimble', '~> 3.0'
   pod 'FBSnapshotTestCase'
   pod 'Nimble-Snapshots'
+ 
 end

@@ -1,16 +1,16 @@
 {
   "name": "TLImageSpring-swift",
-  "version": "0.1.0",
-  "summary": "A short description of TLImageSpring-swift.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/TLImageSpring-swift",
+  "version": "0.0.1",
+  "summary": "This is a simple and easy to use framework of images are downloaded, adopts multi-thread asynchronous loading, support for multiple image format, the hope can help you",
+  "description": "\"This is a simple and easy to use framework of images are downloaded, adopts multi-thread asynchronous loading, support for multiple image format, the hope can help you\"",
+  "homepage": "https://github.com/andrew-anlu/TLImageSpring-swift",
   "license": "MIT",
   "authors": {
     "Andrew": "anluanlu123@163.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/TLImageSpring-swift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/andrew-anlu/TLImageSpring-swift.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
