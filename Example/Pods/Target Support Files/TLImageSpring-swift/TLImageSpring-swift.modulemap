@@ -1,0 +1,6 @@
+framework module TLImageSpring_swift {
+  umbrella header "TLImageSpring-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

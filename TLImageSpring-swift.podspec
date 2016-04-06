@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "TLImageSpring-swift"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of TLImageSpring-swift."
+  s.version          = "0.0.1"
+  s.summary          = "This is a simple and easy to use framework of images are downloaded, adopts multi-thread asynchronous loading, support for multiple image format, the hope can help you"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+"This is a simple and easy to use framework of images are downloaded, adopts multi-thread asynchronous loading, support for multiple image format, the hope can help you"
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TLImageSpring-swift"
+  s.homepage         = "https://github.com/andrew-anlu/TLImageSpring-swift"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Andrew" => "anluanlu123@163.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TLImageSpring-swift.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/andrew-anlu/TLImageSpring-swift.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'

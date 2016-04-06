@@ -1,0 +1,33 @@
+PODS:
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - Nimble (3.2.0)
+  - Nimble-Snapshots (4.0.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (0.9.1)
+  - TLImageSpring-swift (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - Nimble (~> 3.0)
+  - Nimble-Snapshots
+  - Quick (~> 0.8)
+  - TLImageSpring-swift (from `../`)
+
+EXTERNAL SOURCES:
+  TLImageSpring-swift:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Nimble-Snapshots: 1cb1c223a97383d4744f742422eab84df9425742
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
+  TLImageSpring-swift: 0f9f744f84b88f39e8be8fed6d86508d9f2d0af0
+
+COCOAPODS: 0.39.0

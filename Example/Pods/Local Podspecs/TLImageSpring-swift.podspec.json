@@ -1,0 +1,25 @@
+{
+  "name": "TLImageSpring-swift",
+  "version": "0.1.0",
+  "summary": "A short description of TLImageSpring-swift.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TLImageSpring-swift",
+  "license": "MIT",
+  "authors": {
+    "Andrew": "anluanlu123@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TLImageSpring-swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "TLImageSpring-swift": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
