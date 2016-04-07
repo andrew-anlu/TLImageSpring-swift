@@ -38,7 +38,7 @@ public class TLThreadUtils: NSObject {
     
     
     /**
-     同步调用主线程
+     异步调用主线程
      
      - parameter f:回调函数
      */
