@@ -50,6 +50,22 @@ public class TLThreadUtils: NSObject {
         }
     }
     
+    /**
+     在指定的队列中执行回调
+     
+     - parameter queue: 指定的队列
+     - parameter block: 回调函数
+     */
+    public func disSafe_Async_toQueue(queue:dispatch_queue_t,_ block: ()->()){
+        if queue === dispatch_get_main_queue() && NSThread.isMainThread(){
+            block();
+        }else{
+            dispatch_async(queue){
+                block();
+            }
+        }
+    }
+    
     
     
     

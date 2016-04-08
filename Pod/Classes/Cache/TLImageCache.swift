@@ -52,6 +52,17 @@ private func ImageDataHasPNGPreffix(nsdata nsdata:NSData)->Bool{
 }
 
 
+/**
+ 缓存类型
+ 
+ - TLImageCatchTypeNone:   还没有缓存
+ - TLImageCatchTypeMemory: 在内存中缓存
+ - TLImageCatchDisk:       在硬盘上缓存
+ */
+public enum TLImageCacheType{
+    case  TLImageCatchTypeNone,TLImageCatchTypeMemory,TLImageCatchDisk
+}
+
 public class TLImageCache: NSObject {
     
     /// 是否使用内存进行存储
@@ -576,17 +587,7 @@ extension Dictionary{
 
 extension TLImageCache{
     
-    /**
-     缓存类型
-     
-     - TLImageCatchTypeNone:   还没有缓存
-     - TLImageCatchTypeMemory: 在内存中缓存
-     - TLImageCatchDisk:       在硬盘上缓存
-     */
-    public enum TLImageCacheType{
-      case  TLImageCatchTypeNone,TLImageCatchTypeMemory,TLImageCatchDisk
-    }
-    
+ 
     
     func getSize(completionHander:((Size:UInt)->())?){
         dispatch_sync(self.ioQueue) { () -> Void in
