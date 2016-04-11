@@ -19,7 +19,7 @@ private let processQueueName="com.tongli.tlimageSpring.processQueue"
  */
 public struct DownloadIMGResult{
     //下载的主力 sessionDataTask
-    let sessionDataTask:NSURLSessionDataTask;
+    public let sessionDataTask:NSURLSessionDataTask;
     
     private weak var ownerDownloader:TLImageSpringDownloader?
     
@@ -167,7 +167,7 @@ public class TLImageSpringDownloader: NSObject {
      
      - returns:
      */
-    class func STACICINSTANCE()->TLImageSpringDownloader {
+  public  class func STACICINSTANCE()->TLImageSpringDownloader {
         struct Singleton{
             static var onceToken:dispatch_once_t=0;
             static var instance:TLImageSpringDownloader?;
@@ -181,9 +181,10 @@ public class TLImageSpringDownloader: NSObject {
     
     func fetchLoadForkey(key:NSURL) ->ImageFetchLoad?{
         var fetchLoad:ImageFetchLoad?
-        dispatch_async(barrierQueue) { () -> Void in
-            fetchLoad=self.fetchLoads[key];
-        }
+//        dispatch_async(barrierQueue) { () -> Void in
+//            fetchLoad=self.fetchLoads[key];
+//        }
+         fetchLoad=self.fetchLoads[key];
         return fetchLoad;
     }
 
@@ -240,6 +241,8 @@ extension TLImageSpringDownloader{
                     //设置这个session的代理
                     self.sessionHander?.tlImgDownloader=self;
                 }
+                
+                
                 
                 fetchLoad.downloadTaskCount+=1
                 downloadTaskResult=fetchLoad.downloadTask
@@ -301,7 +304,7 @@ extension TLImageSpringDownloader{
 /// 这个类将会处理sessionData 的代理方法，并且还会处理https协议的代理
 class  TLIMGSessionDownloadHandler: NSObject,NSURLSessionDataDelegate,HTTPSChallengeResponseDelegate {
     
-    internal var tlImgDownloader:TLImageSpringDownloader?
+     var tlImgDownloader:TLImageSpringDownloader?
 
     /**
      当收到服务器响应的代理方法
@@ -345,7 +348,7 @@ class  TLIMGSessionDownloadHandler: NSObject,NSURLSessionDataDelegate,HTTPSChall
             fetchLoad.responseData.appendData(data);
             
             for callbackPair  in fetchLoad.callbacks{
-             TLThreadUtils().disAsyncMainThread({ () -> () in
+             TLThreadUtils.shardThreadUtil.disAsyncMainThread({ () -> () in
                 //进度条的回调方法
                 callbackPair.progressBlock?(receivedSize: Int64(fetchLoad.responseData.length), totalSize: dataTask.response!.expectedContentLength);
              })
@@ -374,6 +377,9 @@ class  TLIMGSessionDownloadHandler: NSObject,NSURLSessionDataDelegate,HTTPSChall
             return;
         }
         
+        
+        
+        
         if let callbackPairs=download.fetchLoadForkey(imageUrl)?.callbacks{
             for callbackPair in callbackPairs{
                 dispatch_async(download.processQueue, { () -> Void in
@@ -392,8 +398,11 @@ class  TLIMGSessionDownloadHandler: NSObject,NSURLSessionDataDelegate,HTTPSChall
             return;
         }
         
-        dispatch_async(downloader.processQueue) { () -> Void in
-            if let fetchLoad = self.tlImgDownloader?.fetchLoadForkey(URL){
+        print(downloader.fetchLoads);
+        dispatch_async(downloader.processQueue, { () -> Void in
+            if let fetchLoad = downloader.fetchLoadForkey(URL){
+                
+               
                 if let image=UIImage(data: fetchLoad.responseData){
                     downloader.delegate?.imageDownloader?(downloader, didDownlaodImage: image, forURL: URL, withResponse: task.response!)
                     
@@ -413,7 +422,7 @@ class  TLIMGSessionDownloadHandler: NSObject,NSURLSessionDataDelegate,HTTPSChall
             }else{
                 self.callbackWithImage(nil, error: NSError(domain: TLImageSpringErrorDomain, code: TLIMGERROR.TLIMGERROR_BADDATA.rawValue, userInfo: nil), imageUrl: URL, originalData: nil);
             }
-        }
+        })
     }
     
 }

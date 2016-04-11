@@ -33,7 +33,7 @@ public class TLNetworkActivityIndicator: NSObject {
      开始启动
      */
     public func startActivity(){
-      TLThreadUtils().mySynchronized(self) { () -> () in
+      TLThreadUtils.shardThreadUtil.mySynchronized(self) { () -> () in
         self.count++;
         UIApplication.sharedApplication().networkActivityIndicatorVisible=true;
         }
@@ -43,7 +43,7 @@ public class TLNetworkActivityIndicator: NSObject {
      结束
      */
     public func stopActivity(){
-        TLThreadUtils().mySynchronized(self) { () -> () in
+        TLThreadUtils.shardThreadUtil.mySynchronized(self) { () -> () in
             if(self.count > 0 && --self.count==0){
                 UIApplication.sharedApplication().networkActivityIndicatorVisible=false;
             }
@@ -51,7 +51,7 @@ public class TLNetworkActivityIndicator: NSObject {
     }
     
     public func stopAllActivity(){
-    TLThreadUtils().mySynchronized(self) { () -> () in
+    TLThreadUtils.shardThreadUtil.mySynchronized(self) { () -> () in
         self.count=0;
         UIApplication.sharedApplication().networkActivityIndicatorVisible=false;
         }

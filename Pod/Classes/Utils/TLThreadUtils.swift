@@ -10,7 +10,16 @@ import UIKit
 import Foundation
 
 
+
 public class TLThreadUtils: NSObject {
+  
+    public class var shardThreadUtil:TLThreadUtils{
+        return TLThreadUtils();
+    }
+    private override init() {
+        super.init()
+    }
+    
     /**
      线程锁，等同于objc中的@Synchronized
      

@@ -26,6 +26,7 @@ private let kDefaultCatchMaxCatchAge:NSTimeInterval=60 * 60 * 24 * 7;//默认保
 private var kPNGSignatureData:NSData?
 private var kPNGSignatureBytes = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
 
+public typealias RetrieveBlock=dispatch_block_t;
 
 
 
@@ -75,9 +76,9 @@ public class TLImageCache: NSObject {
     var maxCatcheSize:UInt?
     
     
-    public typealias RetrieveBlock=dispatch_block_t;
     
     
+    private let defaultCache = TLImageCache(nameSpace: "default");
     
     
     private var tlNSCache:AutoNSCache?
@@ -85,6 +86,9 @@ public class TLImageCache: NSObject {
     private var ioQueue:dispatch_queue_t!
     private var fileManager:NSFileManager!;
     
+    public class var defaultCache:TLImageCache{
+      return defaultCache
+    }
     
     /**
      根据一个命名空间初始化实例的方法
@@ -93,21 +97,8 @@ public class TLImageCache: NSObject {
      
      - returns: 对象实例
      */
-    func initWithNameSpace(ns nameSpace:String)->TLImageCache{
-        let path:NSString=self.makeDiskCachePath(nameSpace);
-        return self.initWithNameSpace(ns: nameSpace, diskCatchDirectory: path);
-    }
-    
-    /**
-     初始化的方法
-     
-     - parameter nameSpace:          存储空间
-     - parameter diskCatchDirectory: 硬盘的存储目录
-     
-     - returns: 类实例
-     */
-    func initWithNameSpace(ns nameSpace:String?,  diskCatchDirectory:NSString?)->TLImageCache{
-        
+     public init(nameSpace:String?,  diskCatchDirectory:NSString?=nil){
+         super.init();
         let fullPath:String="com.tongli.tlImageSpringcache".stringByAppendingString(nameSpace!);
         
         kPNGSignatureData=NSData(bytes: kPNGSignatureBytes, length: 8);
@@ -141,10 +132,28 @@ public class TLImageCache: NSObject {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("backgroundCleanDisk"), name: UIApplicationDidEnterBackgroundNotification, object: nil);
         
-        
-        return self;
+
     }
+    deinit{
+     NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+
     
+    /**
+     初始化的方法
+     
+     - parameter nameSpace:          存储空间
+     - parameter diskCatchDirectory: 硬盘的存储目录
+     
+     - returns: 类实例
+     */
+//    func initWithNameSpace(ns nameSpace:String?,  diskCatchDirectory:NSString?)->TLImageCache{
+//        
+//        
+//        
+//        return self;
+//    }
+//    
     //MARK: - 初始化硬盘缓存的路径
     func makeDiskCachePath(nameSpace: String)->String{
         var array:Array=NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true);
@@ -331,7 +340,7 @@ public class TLImageCache: NSObject {
     }
     
     //MARK: - 查询API
-    func diskImageExistWithKey(key:String)->Bool{
+   public func diskImageExistWithKey(key:String)->Bool{
         var isExist=false;
         isExist=NSFileManager.defaultManager().fileExistsAtPath(defaultCachepathForKey(key));
         
@@ -344,7 +353,7 @@ public class TLImageCache: NSObject {
     }
     
     
-    func diskImageExistWithKey(key:String,completion:((Bool)->Void)?){
+   public func diskImageExistWithKey(key:String,completion:((Bool)->Void)?){
         dispatch_async(self.ioQueue) { () -> Void in
             
             let path=self.defaultCachepathForKey(key) as NSString;
@@ -431,7 +440,7 @@ public class TLImageCache: NSObject {
             var block:RetrieveBlock?
             //首先检查内存中的key
             if let image=self.imageFromMemoryCacheForkey(key){
-                TLThreadUtils().disAsyncMainThread({ () -> () in
+                TLThreadUtils.shardThreadUtil.disAsyncMainThread({ () -> () in
                     completionHandler(image: image, cacheType:TLImageCacheType.TLImageCatchTypeMemory);
                 })
                 return nil;
@@ -444,12 +453,12 @@ public class TLImageCache: NSObject {
                                 let cost=TLCacheCostForImage(image);
                                 self.tlNSCache?.setObject(image, forKey: key, cost: cost);
                             }
-                            TLThreadUtils().disAsyncMainThread({ () -> () in
+                            TLThreadUtils.shardThreadUtil.disAsyncMainThread({ () -> () in
                                 completionHandler(image: image, cacheType: TLImageCacheType.TLImageCatchDisk);
                             })
                             return;
                         }else{//如果没有找到图片在缓存和硬盘上
-                            TLThreadUtils().disAsyncMainThread({ () -> () in
+                            TLThreadUtils.shardThreadUtil.disAsyncMainThread({ () -> () in
                                 completionHandler(image: nil, cacheType: TLImageCacheType.TLImageCatchTypeNone);
                             })
                         }

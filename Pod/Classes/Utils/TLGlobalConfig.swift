@@ -33,7 +33,7 @@ public enum TLImgDownloadOpions:UInt{
  /// 下载图片进度条的闭包
 public typealias TLImgSpringDownloadProgressBlock=((receivedSize:Int64,totalSize:Int64)->())
  /// 在manager中下载完成的回调函数
-public typealias TLImgSpringCompleteBlock=((image:UIImage?,error:NSError?,cacheType:TLImageCacheType,imageUrl:NSURL?))
+public typealias TLImgSpringCompleteBlock=((image:UIImage?, error:NSError?,cacheType:TLImageCacheType, imageUrl:NSURL?)->())
 
 
  /// 在downloader中下载完成的回调函数
