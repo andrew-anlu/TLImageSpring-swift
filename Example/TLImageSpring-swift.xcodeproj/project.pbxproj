@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A022218E4FC520E0334A6FF /* Pods_TLImageSpring_swift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BAF7C5BC447E10B060DBB5 /* Pods_TLImageSpring_swift_Tests.framework */; };
 		495A55341CBB56BC00101425 /* TLImageSpring_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495A55331CBB56BC00101425 /* TLImageSpring_swift.framework */; };
+		49F01A481CBE2EB60033C63B /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F01A471CBE2EB60033C63B /* NormalViewController.swift */; };
+		49F01A4A1CBE317F0033C63B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F01A491CBE317F0033C63B /* placeholder.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		495A552F1CBB333D00101425 /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
 		495A55331CBB56BC00101425 /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
 		499FB9651CB4B2B1003F98D5 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "Pods/../build/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<group>"; };
+		49F01A471CBE2EB60033C63B /* NormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
+		49F01A491CBE317F0033C63B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TLImageSpring-swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TLImageSpring-swift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,12 +114,14 @@
 		607FACD21AFB9204008FA782 /* Example for TLImageSpring-swift */ = {
 			isa = PBXGroup;
 			children = (
+				49F01A491CBE317F0033C63B /* placeholder.png */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				49F01A471CBE2EB60033C63B /* NormalViewController.swift */,
 			);
 			name = "Example for TLImageSpring-swift";
 			path = "TLImageSpring-swift";
@@ -259,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				49F01A4A1CBE317F0033C63B /* placeholder.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -372,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				49F01A481CBE2EB60033C63B /* NormalViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +518,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tongli.demo.TLImageSpring-swift-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39196d6b-90dc-4d98-b69c-8472c7e0ccb6";
 			};
 			name = Debug;
 		};
@@ -528,6 +537,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tongli.demo.TLImageSpring-swift-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39196d6b-90dc-4d98-b69c-8472c7e0ccb6";
 			};
 			name = Release;
 		};

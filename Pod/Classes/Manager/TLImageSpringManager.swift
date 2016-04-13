@@ -9,13 +9,14 @@
 import Foundation
 
 public struct TLParam {
-    public let cacheKey:String?
+    public var cacheKey:String?
     public let downloadURL:NSURL
     
     
     public init(cacheKey:String?=nil, downloadURL:NSURL){
         self.downloadURL=downloadURL
-        self.cacheKey = cacheKey
+        self.cacheKey = cacheKey ?? downloadURL.absoluteString
+
     }
 }
 
@@ -23,7 +24,7 @@ public struct TLParam {
 /// 检索图片的类，它会监控图片下载的进度
 /// 1.从内存中检索  2.从网络中检索
 public class RetrieveImageTask{
-    var canceled:Bool=false
+    public var canceled:Bool=false
     
     //开启一个线程检索，从内存中检索图片
     public var diskRetrieveTask : RetrieveBlock?
@@ -86,10 +87,10 @@ public class TLImageSpringManager: NSObject {
      
      - returns: 下载结果的结构体
      */
-    private func downloadImageWithParam(param: TLParam,
+    public func downloadImageWithParam(param: TLParam,
         progressBlock:TLImgSpringDownloadProgressBlock?,
         completionHanlder:TLImgSpringCompleteBlock?,
-        options:TLImgDownloadOpions?)->RetrieveImageTask?{
+        options:TLImgDownloadOpions?)->RetrieveImageTask{
 
             let task = RetrieveImageTask()
             if let optionsInfo = options where options==TLImgDownloadOpions.ForceRefresh{
@@ -127,7 +128,8 @@ public class TLImageSpringManager: NSObject {
         progoressBlock:TLImgSpringDownloadProgressBlock,
         completionHander:TLImgSpringCompleteBlock)->RetrieveImageTask?{
             
-     return self.downloadImageWithParam(TLParam(downloadURL: url),
+    let param=TLParam(cacheKey: url.absoluteString, downloadURL: url);
+     return self.downloadImageWithParam(param,
         progressBlock: progoressBlock,
         completionHanlder: completionHander,
         options: options)
@@ -145,7 +147,7 @@ public class TLImageSpringManager: NSObject {
      
      - returns: 下载结果的结构体
      */
-    private func downloadImageWithURL(URL: NSURL?,
+    public func downloadImageWithURL(URL: NSURL?,
                               forKey key:String,
                         retieveImageTask:RetrieveImageTask,
                            progressBlock:TLImgSpringDownloadProgressBlock?,
@@ -158,16 +160,16 @@ public class TLImageSpringManager: NSObject {
                                         return nil;
                                     }
                                     
-                                    var isFailUrl:Bool=false;
-                                    TLThreadUtils.shardThreadUtil.mySynchronized(self.failedUrls!) { () -> () in
-                                        isFailUrl = (self.failedUrls?.contains(URL!))!
-                                    }
-                                    
-                                  
+//                                    var isFailUrl:Bool=false;
+//                                    TLThreadUtils.shardThreadUtil.mySynchronized(self.failedUrls!) { () -> () in
+//                                        isFailUrl = (self.failedUrls?.contains(URL!))!
+//                                    }
+                      
                                     
            return downloader.downloadImageWithURL(URL!,
-            options: options,
-            progressBlock: { (receivedSize, totalSize) -> () in
+                      options: options,
+            retrieveImageTask:retieveImageTask,
+                progressBlock: { (receivedSize, totalSize) -> () in
                 progressBlock?(receivedSize: receivedSize, totalSize: totalSize);
             }, completionHander: { (image, error, imageURL, originalData) -> () in
                 
@@ -202,7 +204,7 @@ public class TLImageSpringManager: NSObject {
      - parameter completionHander:  完成回调函数
      - parameter options:           下载策略
      */
-    private func retrieveImageFromCacheForkey(key:String,
+    public func retrieveImageFromCacheForkey(key:String,
         withURL URL:NSURL,
         retrieveImageTask:RetrieveImageTask,
         progressBlock:TLImgSpringDownloadProgressBlock?,

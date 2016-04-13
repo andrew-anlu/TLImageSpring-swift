@@ -199,15 +199,19 @@ extension TLImageSpringDownloader{
            progressBlock:TLImgSpringDownloadProgressBlock?,
         completionHander:TLIMGDownloadCompletionHandler?)->DownloadIMGResult?{
     
-            return downloadImageWithURL(URL, options: nil, progressBlock: progressBlock, completionHander: completionHander)
+        return downloadImageWithURL(URL, options: nil, retrieveImageTask: nil, progressBlock: progressBlock, completionHander: completionHander)
     }
     
    
     public func downloadImageWithURL(URL:NSURL,
                                    options:TLImgDownloadOpions?,
+                        retrieveImageTask:RetrieveImageTask?,
                              progressBlock:TLImgSpringDownloadProgressBlock?,
         completionHander:TLIMGDownloadCompletionHandler?)->DownloadIMGResult?{
     
+            if let retrieveImageTask=retrieveImageTask where retrieveImageTask.canceled{
+               return nil
+            }
             
             let timeout=self.downloadTimeout == 0.0 ? 15.0 : self.downloadTimeout
             var downloadTaskResult:DownloadIMGResult?
@@ -242,10 +246,9 @@ extension TLImageSpringDownloader{
                     self.sessionHander?.tlImgDownloader=self;
                 }
                 
-                
-                
                 fetchLoad.downloadTaskCount+=1
                 downloadTaskResult=fetchLoad.downloadTask
+                retrieveImageTask?.downloadTask=downloadTaskResult
             }
             
             return downloadTaskResult;
@@ -378,9 +381,14 @@ class  TLIMGSessionDownloadHandler: NSObject,NSURLSessionDataDelegate,HTTPSChall
         }
         
         
-        
-        
         if let callbackPairs=download.fetchLoadForkey(imageUrl)?.callbacks{
+            
+            /*
+            如果正常回调了（成功或者失败），就把请求URL的数组中删除，下次就能达到下载效果了
+            如果不删除，同样的url请求，第二次将不会执行下载命令
+            */
+            download.cleanForURL(imageUrl)
+            
             for callbackPair in callbackPairs{
                 dispatch_async(download.processQueue, { () -> Void in
                      callbackPair.completionBlock(image: image, error: error, imageURL: imageUrl, originalData: originalData)

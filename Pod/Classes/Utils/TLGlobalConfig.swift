@@ -27,6 +27,11 @@ public enum TLImgDownloadOpions:UInt{
   case  ForceRefresh = 100
   case  CacheMemoryOnly = 101
   case  BackgroundDecode = 102
+  case  PlaceholdImage=103
+  case  ProgressDownload=104
+  case  RetryFailed=105
+  case  LowPriority=106
+  case  HighPriority=107
 }
 
 

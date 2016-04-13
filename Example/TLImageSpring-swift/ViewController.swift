@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor=UIColor.whiteColor()
         // Do any additional setup after loading the view, typically from a nib.
         self.initView();
         
@@ -27,35 +28,37 @@ class ViewController: UIViewController {
 
     
     func initView(){
-        imgView=UIImageView(frame: CGRectMake(10, 10, 200, 200))
-        imgView?.backgroundColor=UIColor.yellowColor()
-        self.view.addSubview(imgView!);
+        var rect=CGRectMake(50, 100, 200, 40)
+        let btn1=createBtn(rect, title: "在普通视图中加载图片")
+        btn1.tag=1
+        btn1.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
+        self.view .addSubview(btn1)
         
-        var rect = CGRectMake(10, 300, 100, 40)
-        let btn:UIButton=UIButton(frame: rect);
-        btn.addTarget(self, action: Selector("test"), forControlEvents: .TouchUpInside);
-        btn.setTitle("try", forState: .Normal);
-        btn.setTitleColor(UIColor.redColor(), forState: .Normal);
-        btn.backgroundColor=UIColor.yellowColor();
-        self.view.addSubview(btn);
-        
-        rect=CGRectMake(CGRectGetMaxX(btn.frame)+20, 300, btn.frame.size.width, btn.frame.size.height);
-        let clearBtn=UIButton(frame: rect);
-        clearBtn.addTarget(self, action: Selector("clearAction"), forControlEvents: .TouchUpInside)
-        clearBtn.backgroundColor=UIColor.yellowColor()
-        clearBtn .setTitle("clear", forState: .Normal);
-        clearBtn.setTitleColor(UIColor.redColor(), forState: .Normal)
-        self.view.addSubview(clearBtn)
+        rect=CGRectMake(50, CGRectGetMaxY(btn1.frame)+10, btn1.frame.size.width, 40)
+        let btn2=createBtn(rect, title: "在表格中加载图片")
+        btn2.tag=2
+        btn2.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
+        self.view.addSubview(btn2)
     }
     
-    func clearAction(){
-        imgView?.image=nil;
+    
+    func createBtn(rect:CGRect,title:String)->UIButton{
+        let btn1=UIButton(frame: rect)
+        btn1.setTitle(title, forState: .Normal)
+        btn1.setTitleColor(UIColor.redColor(), forState: .Normal)
+        btn1.backgroundColor=UIColor.yellowColor()
+        
+        return btn1
     }
+    
+   
+    
+   
     
     func test(){
         print("调用了")
         
-        let download:TLImageSpringDownloader=TLImageSpringDownloader();
+        let download:TLImageSpringDownloader=TLImageSpringDownloader.STACICINSTANCE();
         
         let url=NSURL(string: "http://7xkxhx.com1.z0.glb.clouddn.com/QQ20151022-3.png");
         
@@ -78,6 +81,24 @@ class ViewController: UIViewController {
                 }!
 
         }
+    
+    func tapAction(sender:AnyObject){
+      let btn=sender as! UIButton
+        switch (btn.tag){
+           case 1:
+            let normalVc=NormalViewController()
+            self.navigationController?.pushViewController(normalVc, animated: true)
+            break
+            
+        case 2:
+            
+            break;
+            
+        default:
+            break;
+            
+        }
+    }
    
 
 }

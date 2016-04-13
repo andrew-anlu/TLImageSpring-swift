@@ -64,6 +64,8 @@ public enum TLImageCacheType{
     case  TLImageCatchTypeNone,TLImageCatchTypeMemory,TLImageCatchDisk
 }
 
+private let cacheInstance = TLImageCache(nameSpace: "default");
+
 public class TLImageCache: NSObject {
     
     /// 是否使用内存进行存储
@@ -78,16 +80,17 @@ public class TLImageCache: NSObject {
     
     
     
-    private let defaultCache = TLImageCache(nameSpace: "default");
+    
     
     
     private var tlNSCache:AutoNSCache?
     private var diskCachePath:String?;
     private var ioQueue:dispatch_queue_t!
+    private var processQueue:dispatch_queue_t!
     private var fileManager:NSFileManager!;
     
     public class var defaultCache:TLImageCache{
-      return defaultCache
+      return cacheInstance
     }
     
     /**
@@ -103,7 +106,9 @@ public class TLImageCache: NSObject {
         
         kPNGSignatureData=NSData(bytes: kPNGSignatureBytes, length: 8);
         //创建IO队列
-        ioQueue=dispatch_queue_create("com.tongli.tlImageSpringCatch", DISPATCH_QUEUE_SERIAL);
+        ioQueue=dispatch_queue_create("com.tongli.tlImageSpringCatch.ioQueue", DISPATCH_QUEUE_SERIAL);
+        
+        processQueue=dispatch_queue_create("com.tongli.tlImageSpringCache.processQueue", DISPATCH_QUEUE_CONCURRENT)
         
         //初始化缓存的周期
         maxCatchAge=kDefaultCatchMaxCatchAge;
@@ -445,9 +450,10 @@ public class TLImageCache: NSObject {
                 })
                 return nil;
             }else{
-                block=dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS, { () -> Void in
+                var sSelf: TLImageCache! = self
+                block=dispatch_block_create(DISPATCH_BLOCK_INHERIT_QOS_CLASS) { () -> Void in
                     //从硬盘中检查,异步调用多线程进行查询，因为速度可能会很慢
-                    dispatch_async(self.ioQueue) { () -> Void in
+                    dispatch_async(sSelf.processQueue ,{ () -> Void in
                         if let image=self.imageFromDiskcacheForkey(key){
                             if(self.shouldCatchImagesInMemory){
                                 let cost=TLCacheCostForImage(image);
@@ -455,15 +461,19 @@ public class TLImageCache: NSObject {
                             }
                             TLThreadUtils.shardThreadUtil.disAsyncMainThread({ () -> () in
                                 completionHandler(image: image, cacheType: TLImageCacheType.TLImageCatchDisk);
+                                sSelf=nil
                             })
                             return;
                         }else{//如果没有找到图片在缓存和硬盘上
                             TLThreadUtils.shardThreadUtil.disAsyncMainThread({ () -> () in
                                 completionHandler(image: nil, cacheType: TLImageCacheType.TLImageCatchTypeNone);
+                                 sSelf=nil
                             })
                         }
-                    }
-                })
+                    })
+                }
+                
+                dispatch_async(sSelf.ioQueue, block!)
             }
         
             return block;
