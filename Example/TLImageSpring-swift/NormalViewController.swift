@@ -32,7 +32,7 @@ class NormalViewController: UIViewController {
         imgView?.backgroundColor=UIColor.yellowColor()
         self.view.addSubview(imgView!);
         
-        var rect = CGRectMake(10, 300, 100, 40)
+        var rect = CGRectMake(10, 300, 150, 40)
         let btn:UIButton=UIButton(frame: rect);
         btn.addTarget(self, action: Selector("testManager"), forControlEvents: .TouchUpInside);
         btn.setTitle("用Manager下载", forState: .Normal);
@@ -40,7 +40,7 @@ class NormalViewController: UIViewController {
         btn.backgroundColor=UIColor.yellowColor();
         self.view.addSubview(btn);
         
-        rect = CGRectMake(10, CGRectGetMaxY(btn.frame)+15, 100, 40)
+        rect = CGRectMake(10, CGRectGetMaxY(btn.frame)+15, 200, 40)
         let btnLoadImgView=self.createBtn(rect, title: "用UIImageView加载")
         btnLoadImgView.addTarget(self, action: Selector("testUIImageview"), forControlEvents: .TouchUpInside)
         btnLoadImgView.sizeToFit()
