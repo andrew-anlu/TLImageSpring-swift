@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TLImageSpring-swift"
-  s.version          = "0.0.1"
+  s.version          = "1.0.0"
   s.summary          = "This is a simple and easy to use framework of images are downloaded, adopts multi-thread asynchronous loading, support for multiple image format, the hope can help you"
 
 # This description is used to generate tags and improve search results.

@@ -8,9 +8,9 @@ end
 target 'TLImageSpring-swift_Tests', :exclusive => true do
   pod 'TLImageSpring-swift', :path => '../'
 
-  pod 'Quick', '~> 0.8'
-  pod 'Nimble', '~> 3.0'
-  pod 'FBSnapshotTestCase', '~> 2.1.0'
-  pod 'Nimble-Snapshots', '~> 4.0.1'
+  #pod 'Quick', '~> 0.8'
+  #pod 'Nimble', '~> 3.0'
+  # pod 'FBSnapshotTestCase', '~> 2.1.0'
+  # pod 'Nimble-Snapshots', '~> 4.0.1'
 
 end

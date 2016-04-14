@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor=UIColor.whiteColor()
+        self.navigationController?.delegate=self;
         // Do any additional setup after loading the view, typically from a nib.
         self.initView();
         
@@ -39,6 +40,15 @@ class ViewController: UIViewController {
         btn2.tag=2
         btn2.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
         self.view.addSubview(btn2)
+        
+        
+        rect=CGRectMake(50, CGRectGetMaxY(btn2.frame)+10, btn1.frame.size.width, 40)
+        let btn3=createBtn(rect, title: "在按钮上加载图片")
+        btn3.tag=3
+        btn3.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
+        self.view.addSubview(btn3)
+        
+        
     }
     
     
@@ -91,8 +101,13 @@ class ViewController: UIViewController {
             break
             
         case 2:
-            
+            let tableVc=TableController()
+            self.navigationController?.pushViewController(tableVc, animated: true)
             break;
+        case 3:
+            let btnVc=ButtonViewController()
+            self.navigationController?.pushViewController(btnVc, animated: true)
+            break
             
         default:
             break;
@@ -100,6 +115,19 @@ class ViewController: UIViewController {
         }
     }
    
+}
 
+
+extension UIViewController:UINavigationControllerDelegate{
+    public func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool){
+        if viewController is ViewController{
+            for subview in (viewController.navigationController?.navigationBar.subviews)!{
+            
+                if subview is UIButton{
+                  subview.removeFromSuperview()
+                }
+            }
+        }
+    }
 }
 

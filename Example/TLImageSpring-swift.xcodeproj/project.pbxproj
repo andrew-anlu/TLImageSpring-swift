@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3A022218E4FC520E0334A6FF /* Pods_TLImageSpring_swift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BAF7C5BC447E10B060DBB5 /* Pods_TLImageSpring_swift_Tests.framework */; };
-		495A55341CBB56BC00101425 /* TLImageSpring_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495A55331CBB56BC00101425 /* TLImageSpring_swift.framework */; };
+		4934A19C1CBF415100305752 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934A19B1CBF415100305752 /* TableController.swift */; };
+		4934A19F1CBF43C400305752 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934A19E1CBF43C400305752 /* TableViewCell.swift */; };
+		4934A1A51CBF780800305752 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4934A1A41CBF780800305752 /* placeholder.png */; };
+		494EB1101CBF3BF6005D3A1E /* TLImageSpring_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494EB10F1CBF3BF6005D3A1E /* TLImageSpring_swift.framework */; };
+		4993832C1CBF37540072DA83 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993832B1CBF37540072DA83 /* ButtonViewController.swift */; };
 		49F01A481CBE2EB60033C63B /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F01A471CBE2EB60033C63B /* NormalViewController.swift */; };
-		49F01A4A1CBE317F0033C63B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F01A491CBE317F0033C63B /* placeholder.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -32,14 +35,19 @@
 /* Begin PBXFileReference section */
 		0BB15CF1E9B4AF144B20FA4C /* Pods-TLImageSpring-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLImageSpring-swift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLImageSpring-swift_Example/Pods-TLImageSpring-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		41A53EEE1099E09B54EA3B2F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		490E14151CBF39AA006E888A /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
 		4918D02D1CB79FC0008B7308 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		4918D02F1CB79FC7008B7308 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		4918D0371CB7A3DE008B7308 /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
+		4934A19B1CBF415100305752 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		4934A19E1CBF43C400305752 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4934A1A41CBF780800305752 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		494EB10F1CBF3BF6005D3A1E /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
 		495A552F1CBB333D00101425 /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
 		495A55331CBB56BC00101425 /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TLImageSpring_swift.framework; path = "Pods/../build/Debug-iphoneos/TLImageSpring_swift.framework"; sourceTree = "<group>"; };
+		4993832B1CBF37540072DA83 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		499FB9651CB4B2B1003F98D5 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "Pods/../build/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<group>"; };
 		49F01A471CBE2EB60033C63B /* NormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
-		49F01A491CBE317F0033C63B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TLImageSpring-swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TLImageSpring-swift_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495A55341CBB56BC00101425 /* TLImageSpring_swift.framework in Frameworks */,
+				494EB1101CBF3BF6005D3A1E /* TLImageSpring_swift.framework in Frameworks */,
 				F0741013C755058F131963D4 /* Pods_TLImageSpring_swift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +98,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4934A19D1CBF43B200305752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4934A19E1CBF43C400305752 /* TableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4993832A1CBF37420072DA83 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				49F01A471CBE2EB60033C63B /* NormalViewController.swift */,
+				4993832B1CBF37540072DA83 /* ButtonViewController.swift */,
+				4934A19B1CBF415100305752 /* TableController.swift */,
+			);
+			name = Demos;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -114,14 +140,15 @@
 		607FACD21AFB9204008FA782 /* Example for TLImageSpring-swift */ = {
 			isa = PBXGroup;
 			children = (
-				49F01A491CBE317F0033C63B /* placeholder.png */,
+				4934A19D1CBF43B200305752 /* View */,
+				4993832A1CBF37420072DA83 /* Demos */,
+				4934A1A41CBF780800305752 /* placeholder.png */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				49F01A471CBE2EB60033C63B /* NormalViewController.swift */,
 			);
 			name = "Example for TLImageSpring-swift";
 			path = "TLImageSpring-swift";
@@ -164,6 +191,8 @@
 		B5A744209106AF3438C8CD7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				494EB10F1CBF3BF6005D3A1E /* TLImageSpring_swift.framework */,
+				490E14151CBF39AA006E888A /* TLImageSpring_swift.framework */,
 				495A55331CBB56BC00101425 /* TLImageSpring_swift.framework */,
 				495A552F1CBB333D00101425 /* TLImageSpring_swift.framework */,
 				4918D0371CB7A3DE008B7308 /* TLImageSpring_swift.framework */,
@@ -264,8 +293,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4934A1A51CBF780800305752 /* placeholder.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				49F01A4A1CBE317F0033C63B /* placeholder.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -378,8 +407,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4993832C1CBF37540072DA83 /* ButtonViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				49F01A481CBE2EB60033C63B /* NormalViewController.swift in Sources */,
+				4934A19F1CBF43C400305752 /* TableViewCell.swift in Sources */,
+				4934A19C1CBF415100305752 /* TableController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +546,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "TLImageSpring-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tongli.demo.TLImageSpring-swift-Example";
@@ -533,6 +566,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "TLImageSpring-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tongli.demo.TLImageSpring-swift-Example";

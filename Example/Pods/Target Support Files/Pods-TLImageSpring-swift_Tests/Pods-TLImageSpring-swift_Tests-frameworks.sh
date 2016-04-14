@@ -85,9 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TLImageSpring-swift_Tests/TLImageSpring_swift.framework"
-  install_framework "Pods-TLImageSpring-swift_Tests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TLImageSpring-swift_Tests/TLImageSpring_swift.framework"
-  install_framework "Pods-TLImageSpring-swift_Tests/Quick.framework"
 fi
