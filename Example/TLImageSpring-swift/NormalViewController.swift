@@ -103,7 +103,13 @@ class NormalViewController: UIViewController {
         
        
        
-        self.imgView?.TL_setImageWithURL(imageURL, placeholderImage: UIImage(named: "placeholder"));
+//        self.imgView?.TL_setImageWithURL(imageURL, placeholderImage: UIImage(named: "placeholder"));
+        
+        self.imgView?.TL_setImageWithURL(imageURL, placeholderImage: UIImage(named: "placeholder"), options: nil, progrocessBlock: nil, completionHander: { (image, error, cacheType, imageUrl) in
+            print("下载完毕了")
+            self.imgView?.frame = CGRectMake(0, 0, image!.size.width, image!.size.height)
+        })
+        
     }
     
     func createBtn(rect:CGRect,title:String)->UIButton{

@@ -202,6 +202,8 @@ public extension UIImageView{
                         
                         weakSelf.image=image;
                         
+                        completionHander?(image: image, error: error, cacheType: cacheType, imageUrl: imageUrl);
+                        
                     })
                     
                 }, options: options)
