@@ -32,20 +32,20 @@ class ViewController: UIViewController {
         var rect=CGRectMake(50, 100, 200, 40)
         let btn1=createBtn(rect, title: "在普通视图中加载图片")
         btn1.tag=1
-        btn1.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
+        btn1.addTarget(self, action: #selector(ViewController.tapAction(_:)), forControlEvents: .TouchUpInside)
         self.view .addSubview(btn1)
         
         rect=CGRectMake(50, CGRectGetMaxY(btn1.frame)+10, btn1.frame.size.width, 40)
         let btn2=createBtn(rect, title: "在表格中加载图片")
         btn2.tag=2
-        btn2.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
+        btn2.addTarget(self, action: #selector(ViewController.tapAction(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(btn2)
         
         
         rect=CGRectMake(50, CGRectGetMaxY(btn2.frame)+10, btn1.frame.size.width, 40)
         let btn3=createBtn(rect, title: "在按钮上加载图片")
         btn3.tag=3
-        btn3.addTarget(self, action: Selector("tapAction:"), forControlEvents: .TouchUpInside)
+        btn3.addTarget(self, action: #selector(ViewController.tapAction(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(btn3)
         
         

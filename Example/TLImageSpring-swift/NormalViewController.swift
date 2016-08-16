@@ -34,7 +34,7 @@ class NormalViewController: UIViewController {
         
         var rect = CGRectMake(10, 300, 150, 40)
         let btn:UIButton=UIButton(frame: rect);
-        btn.addTarget(self, action: Selector("testManager"), forControlEvents: .TouchUpInside);
+        btn.addTarget(self, action: #selector(NormalViewController.testManager), forControlEvents: .TouchUpInside);
         btn.setTitle("用Manager下载", forState: .Normal);
         btn.setTitleColor(UIColor.redColor(), forState: .Normal);
         btn.backgroundColor=UIColor.yellowColor();
@@ -43,20 +43,20 @@ class NormalViewController: UIViewController {
         //用UIImageView加载
         rect = CGRectMake(10, CGRectGetMaxY(btn.frame)+15, 200, 40)
         let btnLoadImgView=self.createBtn(rect, title: "用UIImageView加载")
-        btnLoadImgView.addTarget(self, action: Selector("testUIImageview"), forControlEvents: .TouchUpInside)
+        btnLoadImgView.addTarget(self, action: #selector(NormalViewController.testUIImageview), forControlEvents: .TouchUpInside)
         btnLoadImgView.sizeToFit()
         self.view .addSubview(btnLoadImgView)
         
         //取消下载
         rect = CGRectMake(10, CGRectGetMaxY(btnLoadImgView.frame)+15, 200, 40)
         let cancelBtn=self.createBtn(rect, title: "取消下载")
-        cancelBtn.addTarget(self, action: Selector("cancelDownload"), forControlEvents: .TouchUpInside);
+        cancelBtn.addTarget(self, action: #selector(NormalViewController.cancelDownload), forControlEvents: .TouchUpInside);
         self.view.addSubview(cancelBtn)
         
         
         rect=CGRectMake(CGRectGetMaxX(btn.frame)+20, 300, btn.frame.size.width, btn.frame.size.height);
         let clearBtn=UIButton(frame: rect);
-        clearBtn.addTarget(self, action: Selector("clearAction"), forControlEvents: .TouchUpInside)
+        clearBtn.addTarget(self, action: #selector(NormalViewController.clearAction), forControlEvents: .TouchUpInside)
         clearBtn.backgroundColor=UIColor.yellowColor()
         clearBtn .setTitle("从内存中清空", forState: .Normal);
         clearBtn.setTitleColor(UIColor.redColor(), forState: .Normal)

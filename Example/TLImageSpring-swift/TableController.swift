@@ -37,7 +37,7 @@ class TableController: UIViewController {
         var rect=CGRectMake(SCREENT_WIDTH-100, 5, 100, 30)
         if clearBtn==nil{
             clearBtn=self.createBtn(rect, title: "从内存清空")
-            clearBtn.addTarget(self, action: Selector("clearAction"), forControlEvents: .TouchUpInside)
+            clearBtn.addTarget(self, action: #selector(TableController.clearAction), forControlEvents: .TouchUpInside)
             self.navigationController?.navigationBar.addSubview(clearBtn)
         }
        
@@ -45,7 +45,7 @@ class TableController: UIViewController {
         if reloadBtn==nil{
             rect=CGRectMake(CGRectGetMinX(clearBtn.frame)-100, clearBtn.frame.origin.y, 100, 30)
             reloadBtn=self.createBtn(rect, title: "重新加载")
-            reloadBtn.addTarget(self, action: Selector("reload"), forControlEvents: .TouchUpInside)
+            reloadBtn.addTarget(self, action: #selector(TableController.reload), forControlEvents: .TouchUpInside)
             self.navigationController?.navigationBar.addSubview(reloadBtn)
         }
         

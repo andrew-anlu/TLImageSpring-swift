@@ -236,8 +236,8 @@ extension TLImageSpringDownloader{
                     
                     fetchLoad.downloadTask=DownloadIMGResult(sessionDataTask: dataTask, ownerDownloader: self)
                     fetchLoad.options=options;
-                    //下载的优先级
-                    dataTask.priority=NSURLSessionTaskPriorityDefault;
+                    //下载的优先级 为了兼容ios8
+                    //dataTask.priority=NSURLSessionTaskPriorityDefault;
                     
                     //启动下载命令
                     dataTask.resume();

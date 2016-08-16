@@ -1,852 +1,2004 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		20903770095292A4578E14581B6AAE0F /* TLImageSpringDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444CB5ED15E56967E99CF3007A51722D /* TLImageSpringDownloader.swift */; };
-		361CD581A32BDED68B1DA7BB871CAE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		3B2877416D64093133D445259EDD613C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		44EFDB377B04D1FEF7CE17BA0E5A8A18 /* TLNetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4DAF8403F9D5A6581E5EEC3006A236 /* TLNetworkActivityIndicator.swift */; };
-		488AE7FB66F932D3866BE7797DD4E60D /* ImageView+TLImageSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431C6F4C9810C5D9B5EA0C5E6EE51CE /* ImageView+TLImageSpring.swift */; };
-		4CAE2E1BEDB3F0C97F2B8A600637C667 /* UIbutton+TLImageSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF047FD400DBC545E2083F7D994446AB /* UIbutton+TLImageSpring.swift */; };
-		5F107EBB159F9CA21A530EE53A94741E /* Pods-TLImageSpring-swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB1EEDD228EFC22D9B31B22557F359 /* Pods-TLImageSpring-swift_Tests-dummy.m */; };
-		6C70EB4A151E8E68DBCF8A7896CEE9D2 /* Pods-TLImageSpring-swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8402456B74159222C1FB1DD57C385 /* Pods-TLImageSpring-swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		800E32548227A7776177C44181CA6FDA /* TLImageSpring-swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0EF4C20EB63ECBDA0D42352772770737 /* TLImageSpring-swift.bundle */; };
-		8164DC66B08449531A66B86FD3081D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9B120572E4EE01B50B2508D958325B6C /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BD1C145365C9C044825F9AE2335255 /* String+MD5.swift */; };
-		A9C4A29E716C2D9B11BDE55484AAF429 /* TLImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C841983E728527E3E875EF8F2B7F9BF1 /* TLImageCache.swift */; };
-		C57B8F936763C3BFEB3991349D72F3E7 /* TLImageSpring-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A0B482B1C0CD7D47FE06C98545310D /* TLImageSpring-swift-dummy.m */; };
-		CB4A89A1FDF82ACF4CB63EA2AFD0265B /* Pods-TLImageSpring-swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F54B900E72A4AC6CE28CF5DFE4B5F5 /* Pods-TLImageSpring-swift_Example-dummy.m */; };
-		D2267E306FF2090099E05AB89AC66F01 /* TLGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0499A05B1735FEB5EF569FBB75681 /* TLGlobalConfig.swift */; };
-		D8093FA2CAEE3F327BE7E6DDECF0A469 /* Pods-TLImageSpring-swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ECA0A5C751B118B16CED7CA5163971 /* Pods-TLImageSpring-swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCBEA9793EBFA5E9F260E6BD089518F3 /* TLThreadUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3AB343FA796922B6923869FFB472B /* TLThreadUtils.swift */; };
-		EE31E1BB367D954F8FF8CAACEADE604B /* TLImageSpringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B78551026FD90992A4057DA8BC0A50A /* TLImageSpringManager.swift */; };
-		F49712D22620B267F686A63F60DAE335 /* TLImageSpring-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7DEEF7AC4F596436B056C5D6A817DF /* TLImageSpring-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		54F87398AE2B8C3802CD002605DB82F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 67429976F8DEE91E5E2708DB2960607C;
-			remoteInfo = "TLImageSpring-swift";
-		};
-		CB41B71E1F8AAB8D2F81AEAC99F1423D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25650A819F380C13B749BE048D79AAD3;
-			remoteInfo = "TLImageSpring-swift-TLImageSpring-swift";
-		};
-		ECF3CFD32F2E4358F345F065827490EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 67429976F8DEE91E5E2708DB2960607C;
-			remoteInfo = "TLImageSpring-swift";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		01B0FC5177366FB951D40F2B047E7F8F /* Pods-TLImageSpring-swift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TLImageSpring-swift_Example-resources.sh"; sourceTree = "<group>"; };
-		0B0FEAEE942D451681CB41737BC38A0D /* TLImageSpring-swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLImageSpring-swift-prefix.pch"; sourceTree = "<group>"; };
-		0EF4C20EB63ECBDA0D42352772770737 /* TLImageSpring-swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TLImageSpring-swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D3A4F980998DC55DDA423826B4554B /* Pods-TLImageSpring-swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TLImageSpring-swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		18C4944E3E8DECA6549D6708972DB5E0 /* Pods_TLImageSpring_swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLImageSpring_swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20F54B900E72A4AC6CE28CF5DFE4B5F5 /* Pods-TLImageSpring-swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TLImageSpring-swift_Example-dummy.m"; sourceTree = "<group>"; };
-		2CE3AB343FA796922B6923869FFB472B /* TLThreadUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLThreadUtils.swift; sourceTree = "<group>"; };
-		32ECA0A5C751B118B16CED7CA5163971 /* Pods-TLImageSpring-swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TLImageSpring-swift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3B27CBFA067DA7EA544C371CAAEB0190 /* Pods-TLImageSpring-swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLImageSpring-swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		43A0B482B1C0CD7D47FE06C98545310D /* TLImageSpring-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLImageSpring-swift-dummy.m"; sourceTree = "<group>"; };
-		444CB5ED15E56967E99CF3007A51722D /* TLImageSpringDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageSpringDownloader.swift; sourceTree = "<group>"; };
-		4AFB1EEDD228EFC22D9B31B22557F359 /* Pods-TLImageSpring-swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TLImageSpring-swift_Tests-dummy.m"; sourceTree = "<group>"; };
-		52D9DCB9BE65E565FB18769AD15506C3 /* Pods-TLImageSpring-swift_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TLImageSpring-swift_Tests-resources.sh"; sourceTree = "<group>"; };
-		5B78551026FD90992A4057DA8BC0A50A /* TLImageSpringManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageSpringManager.swift; sourceTree = "<group>"; };
-		67E60CDDC8AEDDDB6512C4BA74F5FB19 /* TLImageSpring-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "TLImageSpring-swift.modulemap"; sourceTree = "<group>"; };
-		6A7DEEF7AC4F596436B056C5D6A817DF /* TLImageSpring-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLImageSpring-swift-umbrella.h"; sourceTree = "<group>"; };
-		6F834141300B62C598E74D451795767C /* Pods-TLImageSpring-swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TLImageSpring-swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		716543BF8845BCDAB23813E9E597E4DF /* Pods-TLImageSpring-swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TLImageSpring-swift_Example.modulemap"; sourceTree = "<group>"; };
-		728536D03B7928B06EE6229069C00B7C /* Pods-TLImageSpring-swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TLImageSpring-swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7359A2A0F7C75396A310EDA18DF4D859 /* TLImageSpring-swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TLImageSpring-swift.xcconfig"; sourceTree = "<group>"; };
-		7EB25E32F0F137C48247E8080910EB19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81BD1C145365C9C044825F9AE2335255 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
-		81DEC443CD4949F8FF73AE6561F49ED8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81F9712B210035F3C555B6B067C843B0 /* TLImageSpring_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TLImageSpring_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84C8402456B74159222C1FB1DD57C385 /* Pods-TLImageSpring-swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TLImageSpring-swift_Example-umbrella.h"; sourceTree = "<group>"; };
-		86B0499A05B1735FEB5EF569FBB75681 /* TLGlobalConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLGlobalConfig.swift; sourceTree = "<group>"; };
-		92F5ED2ED5C39B01203640FAC305DDEC /* Pods-TLImageSpring-swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLImageSpring-swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A308B0B3D5908CA70D8FFB18061292D9 /* Pods-TLImageSpring-swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TLImageSpring-swift_Tests.modulemap"; sourceTree = "<group>"; };
-		A7808DDADE384E65169B530C2B922827 /* Pods-TLImageSpring-swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLImageSpring-swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8F96FCD82DE588CB113301489EA9109 /* Pods-TLImageSpring-swift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TLImageSpring-swift_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		AB9232572126E043F703E4A6C9BE381F /* Pods-TLImageSpring-swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TLImageSpring-swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B27730AD5C38A03BE2E197082A7C1655 /* Pods-TLImageSpring-swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLImageSpring-swift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B6EDD5153EED8F750636CCA6B2651577 /* Pods_TLImageSpring_swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLImageSpring_swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BF047FD400DBC545E2083F7D994446AB /* UIbutton+TLImageSpring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIbutton+TLImageSpring.swift"; sourceTree = "<group>"; };
-		C841983E728527E3E875EF8F2B7F9BF1 /* TLImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageCache.swift; sourceTree = "<group>"; };
-		CA4DAF8403F9D5A6581E5EEC3006A236 /* TLNetworkActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLNetworkActivityIndicator.swift; sourceTree = "<group>"; };
-		E237B2226693B18882EE8D829178899A /* Pods-TLImageSpring-swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TLImageSpring-swift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F21479F68C74D287E3B274D41EF94C41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F431C6F4C9810C5D9B5EA0C5E6EE51CE /* ImageView+TLImageSpring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ImageView+TLImageSpring.swift"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		06E7EA62E93F67440F59DEDF130D190D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				361CD581A32BDED68B1DA7BB871CAE15 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		19C7174EAE61A554F91546E00288B922 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5836C2F2DB63CE84860827CB3064C90D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B2877416D64093133D445259EDD613C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA06A9110D60338C1E50983D8D4F8DC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8164DC66B08449531A66B86FD3081D4E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		09D102157DF12D3D1E93AE096A38D7E7 /* Pods-TLImageSpring-swift_Example */ = {
-			isa = PBXGroup;
-			children = (
-				81DEC443CD4949F8FF73AE6561F49ED8 /* Info.plist */,
-				716543BF8845BCDAB23813E9E597E4DF /* Pods-TLImageSpring-swift_Example.modulemap */,
-				728536D03B7928B06EE6229069C00B7C /* Pods-TLImageSpring-swift_Example-acknowledgements.markdown */,
-				AB9232572126E043F703E4A6C9BE381F /* Pods-TLImageSpring-swift_Example-acknowledgements.plist */,
-				20F54B900E72A4AC6CE28CF5DFE4B5F5 /* Pods-TLImageSpring-swift_Example-dummy.m */,
-				E237B2226693B18882EE8D829178899A /* Pods-TLImageSpring-swift_Example-frameworks.sh */,
-				01B0FC5177366FB951D40F2B047E7F8F /* Pods-TLImageSpring-swift_Example-resources.sh */,
-				84C8402456B74159222C1FB1DD57C385 /* Pods-TLImageSpring-swift_Example-umbrella.h */,
-				92F5ED2ED5C39B01203640FAC305DDEC /* Pods-TLImageSpring-swift_Example.debug.xcconfig */,
-				B27730AD5C38A03BE2E197082A7C1655 /* Pods-TLImageSpring-swift_Example.release.xcconfig */,
-			);
-			name = "Pods-TLImageSpring-swift_Example";
-			path = "Target Support Files/Pods-TLImageSpring-swift_Example";
-			sourceTree = "<group>";
-		};
-		2A7E09301CA54BE359D0308CC9A78AEA /* Downloader */ = {
-			isa = PBXGroup;
-			children = (
-				444CB5ED15E56967E99CF3007A51722D /* TLImageSpringDownloader.swift */,
-			);
-			path = Downloader;
-			sourceTree = "<group>";
-		};
-		30AAC00F3D2D4EE0472F5CCFC4384CB6 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				5B78551026FD90992A4057DA8BC0A50A /* TLImageSpringManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		44915F332F487512F878352A48F8F732 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18C4944E3E8DECA6549D6708972DB5E0 /* Pods_TLImageSpring_swift_Example.framework */,
-				B6EDD5153EED8F750636CCA6B2651577 /* Pods_TLImageSpring_swift_Tests.framework */,
-				0EF4C20EB63ECBDA0D42352772770737 /* TLImageSpring-swift.bundle */,
-				81F9712B210035F3C555B6B067C843B0 /* TLImageSpring_swift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		48ED056B687F07DC3BA631E9F3EDF06F /* Pods-TLImageSpring-swift_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				7EB25E32F0F137C48247E8080910EB19 /* Info.plist */,
-				A308B0B3D5908CA70D8FFB18061292D9 /* Pods-TLImageSpring-swift_Tests.modulemap */,
-				6F834141300B62C598E74D451795767C /* Pods-TLImageSpring-swift_Tests-acknowledgements.markdown */,
-				10D3A4F980998DC55DDA423826B4554B /* Pods-TLImageSpring-swift_Tests-acknowledgements.plist */,
-				4AFB1EEDD228EFC22D9B31B22557F359 /* Pods-TLImageSpring-swift_Tests-dummy.m */,
-				A8F96FCD82DE588CB113301489EA9109 /* Pods-TLImageSpring-swift_Tests-frameworks.sh */,
-				52D9DCB9BE65E565FB18769AD15506C3 /* Pods-TLImageSpring-swift_Tests-resources.sh */,
-				32ECA0A5C751B118B16CED7CA5163971 /* Pods-TLImageSpring-swift_Tests-umbrella.h */,
-				A7808DDADE384E65169B530C2B922827 /* Pods-TLImageSpring-swift_Tests.debug.xcconfig */,
-				3B27CBFA067DA7EA544C371CAAEB0190 /* Pods-TLImageSpring-swift_Tests.release.xcconfig */,
-			);
-			name = "Pods-TLImageSpring-swift_Tests";
-			path = "Target Support Files/Pods-TLImageSpring-swift_Tests";
-			sourceTree = "<group>";
-		};
-		6D89E23D9B07B027B247D6DF96AF35B5 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				86B0499A05B1735FEB5EF569FBB75681 /* TLGlobalConfig.swift */,
-				CA4DAF8403F9D5A6581E5EEC3006A236 /* TLNetworkActivityIndicator.swift */,
-				2CE3AB343FA796922B6923869FFB472B /* TLThreadUtils.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		6F919C9CBE4ACCE2E07D16BB82832F48 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AB2BAA59979560DC098E5FB52B50F88E /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				FCD0FC3CDE01B26E0957897ABF6964ED /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				44915F332F487512F878352A48F8F732 /* Products */,
-				888DDB235BF5B0B308570D1FBBAD85A0 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		83CF62924546A13A0E519A19467A1E59 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F21479F68C74D287E3B274D41EF94C41 /* Info.plist */,
-				67E60CDDC8AEDDDB6512C4BA74F5FB19 /* TLImageSpring-swift.modulemap */,
-				7359A2A0F7C75396A310EDA18DF4D859 /* TLImageSpring-swift.xcconfig */,
-				43A0B482B1C0CD7D47FE06C98545310D /* TLImageSpring-swift-dummy.m */,
-				0B0FEAEE942D451681CB41737BC38A0D /* TLImageSpring-swift-prefix.pch */,
-				6A7DEEF7AC4F596436B056C5D6A817DF /* TLImageSpring-swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TLImageSpring-swift";
-			sourceTree = "<group>";
-		};
-		888DDB235BF5B0B308570D1FBBAD85A0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				09D102157DF12D3D1E93AE096A38D7E7 /* Pods-TLImageSpring-swift_Example */,
-				48ED056B687F07DC3BA631E9F3EDF06F /* Pods-TLImageSpring-swift_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AB2BAA59979560DC098E5FB52B50F88E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D8668A429BD2468A9B18B51A7A208787 /* Cache */,
-				B83BD0E768C33C222099FF817664B07B /* Categories */,
-				2A7E09301CA54BE359D0308CC9A78AEA /* Downloader */,
-				30AAC00F3D2D4EE0472F5CCFC4384CB6 /* Manager */,
-				6D89E23D9B07B027B247D6DF96AF35B5 /* Utils */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		B83BD0E768C33C222099FF817664B07B /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				F431C6F4C9810C5D9B5EA0C5E6EE51CE /* ImageView+TLImageSpring.swift */,
-				81BD1C145365C9C044825F9AE2335255 /* String+MD5.swift */,
-				BF047FD400DBC545E2083F7D994446AB /* UIbutton+TLImageSpring.swift */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D8668A429BD2468A9B18B51A7A208787 /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-				C841983E728527E3E875EF8F2B7F9BF1 /* TLImageCache.swift */,
-			);
-			path = Cache;
-			sourceTree = "<group>";
-		};
-		FA51DC111A24C8AB55234127EF45B708 /* TLImageSpring-swift */ = {
-			isa = PBXGroup;
-			children = (
-				6F919C9CBE4ACCE2E07D16BB82832F48 /* Pod */,
-				83CF62924546A13A0E519A19467A1E59 /* Support Files */,
-			);
-			name = "TLImageSpring-swift";
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		FCD0FC3CDE01B26E0957897ABF6964ED /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FA51DC111A24C8AB55234127EF45B708 /* TLImageSpring-swift */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		0F6B66AA567464FB3B9D9739257AA21D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6C70EB4A151E8E68DBCF8A7896CEE9D2 /* Pods-TLImageSpring-swift_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A93D9CB1E86774B885B8DD47313C2CC7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8093FA2CAEE3F327BE7E6DDECF0A469 /* Pods-TLImageSpring-swift_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCB8ECE288B3160FDBA4DA18BEB4766A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F49712D22620B267F686A63F60DAE335 /* TLImageSpring-swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		25650A819F380C13B749BE048D79AAD3 /* TLImageSpring-swift-TLImageSpring-swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 505728FD47DC4FEDD2DE8D9B8F7942D6 /* Build configuration list for PBXNativeTarget "TLImageSpring-swift-TLImageSpring-swift" */;
-			buildPhases = (
-				4AD492140AF89F4170F813BBB87C0F42 /* Sources */,
-				19C7174EAE61A554F91546E00288B922 /* Frameworks */,
-				3D786BEA636310D1B12973DCE458B47A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TLImageSpring-swift-TLImageSpring-swift";
-			productName = "TLImageSpring-swift-TLImageSpring-swift";
-			productReference = 0EF4C20EB63ECBDA0D42352772770737 /* TLImageSpring-swift.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		67429976F8DEE91E5E2708DB2960607C /* TLImageSpring-swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06EB9C37084C3D5748071461E384F2F3 /* Build configuration list for PBXNativeTarget "TLImageSpring-swift" */;
-			buildPhases = (
-				1941051808C8ADFC26DD7BA6E02DC32A /* Sources */,
-				CA06A9110D60338C1E50983D8D4F8DC6 /* Frameworks */,
-				F7013EE7F64144D923DB7B0A290B5F84 /* Resources */,
-				FCB8ECE288B3160FDBA4DA18BEB4766A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2CCFE427C0D57A6B59BDA779DEE1BE4D /* PBXTargetDependency */,
-			);
-			name = "TLImageSpring-swift";
-			productName = "TLImageSpring-swift";
-			productReference = 81F9712B210035F3C555B6B067C843B0 /* TLImageSpring_swift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		82274A18DADF362F8452F451BFE81DCA /* Pods-TLImageSpring-swift_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA8A160B13B0BBB5AC7A9305D8BA0CD8 /* Build configuration list for PBXNativeTarget "Pods-TLImageSpring-swift_Example" */;
-			buildPhases = (
-				E30929B1B8E4E5575F961112E862F78D /* Sources */,
-				06E7EA62E93F67440F59DEDF130D190D /* Frameworks */,
-				0F6B66AA567464FB3B9D9739257AA21D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3FAA7D4027A9B788437A0725115BFFE3 /* PBXTargetDependency */,
-			);
-			name = "Pods-TLImageSpring-swift_Example";
-			productName = "Pods-TLImageSpring-swift_Example";
-			productReference = 18C4944E3E8DECA6549D6708972DB5E0 /* Pods_TLImageSpring_swift_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F61B92BA75991544ECA7A3FD53419FA6 /* Pods-TLImageSpring-swift_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD0E4E5FBD7013710476260E947785C3 /* Build configuration list for PBXNativeTarget "Pods-TLImageSpring-swift_Tests" */;
-			buildPhases = (
-				1E825FC5ECEFBA140DE5E01809EFA1DE /* Sources */,
-				5836C2F2DB63CE84860827CB3064C90D /* Frameworks */,
-				A93D9CB1E86774B885B8DD47313C2CC7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1D09A6D2988CB185495E56DF8736A4A /* PBXTargetDependency */,
-			);
-			name = "Pods-TLImageSpring-swift_Tests";
-			productName = "Pods-TLImageSpring-swift_Tests";
-			productReference = B6EDD5153EED8F750636CCA6B2651577 /* Pods_TLImageSpring_swift_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 44915F332F487512F878352A48F8F732 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				82274A18DADF362F8452F451BFE81DCA /* Pods-TLImageSpring-swift_Example */,
-				F61B92BA75991544ECA7A3FD53419FA6 /* Pods-TLImageSpring-swift_Tests */,
-				67429976F8DEE91E5E2708DB2960607C /* TLImageSpring-swift */,
-				25650A819F380C13B749BE048D79AAD3 /* TLImageSpring-swift-TLImageSpring-swift */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3D786BEA636310D1B12973DCE458B47A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7013EE7F64144D923DB7B0A290B5F84 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				800E32548227A7776177C44181CA6FDA /* TLImageSpring-swift.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		1941051808C8ADFC26DD7BA6E02DC32A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				488AE7FB66F932D3866BE7797DD4E60D /* ImageView+TLImageSpring.swift in Sources */,
-				9B120572E4EE01B50B2508D958325B6C /* String+MD5.swift in Sources */,
-				D2267E306FF2090099E05AB89AC66F01 /* TLGlobalConfig.swift in Sources */,
-				A9C4A29E716C2D9B11BDE55484AAF429 /* TLImageCache.swift in Sources */,
-				C57B8F936763C3BFEB3991349D72F3E7 /* TLImageSpring-swift-dummy.m in Sources */,
-				20903770095292A4578E14581B6AAE0F /* TLImageSpringDownloader.swift in Sources */,
-				EE31E1BB367D954F8FF8CAACEADE604B /* TLImageSpringManager.swift in Sources */,
-				44EFDB377B04D1FEF7CE17BA0E5A8A18 /* TLNetworkActivityIndicator.swift in Sources */,
-				DCBEA9793EBFA5E9F260E6BD089518F3 /* TLThreadUtils.swift in Sources */,
-				4CAE2E1BEDB3F0C97F2B8A600637C667 /* UIbutton+TLImageSpring.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E825FC5ECEFBA140DE5E01809EFA1DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F107EBB159F9CA21A530EE53A94741E /* Pods-TLImageSpring-swift_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4AD492140AF89F4170F813BBB87C0F42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E30929B1B8E4E5575F961112E862F78D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB4A89A1FDF82ACF4CB63EA2AFD0265B /* Pods-TLImageSpring-swift_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2CCFE427C0D57A6B59BDA779DEE1BE4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TLImageSpring-swift-TLImageSpring-swift";
-			target = 25650A819F380C13B749BE048D79AAD3 /* TLImageSpring-swift-TLImageSpring-swift */;
-			targetProxy = CB41B71E1F8AAB8D2F81AEAC99F1423D /* PBXContainerItemProxy */;
-		};
-		3FAA7D4027A9B788437A0725115BFFE3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TLImageSpring-swift";
-			target = 67429976F8DEE91E5E2708DB2960607C /* TLImageSpring-swift */;
-			targetProxy = 54F87398AE2B8C3802CD002605DB82F9 /* PBXContainerItemProxy */;
-		};
-		F1D09A6D2988CB185495E56DF8736A4A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TLImageSpring-swift";
-			target = 67429976F8DEE91E5E2708DB2960607C /* TLImageSpring-swift */;
-			targetProxy = ECF3CFD32F2E4358F345F065827490EB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2A9A02690961A418272F0157A1B6332A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7359A2A0F7C75396A310EDA18DF4D859 /* TLImageSpring-swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TLImageSpring-swift/TLImageSpring-swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TLImageSpring-swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TLImageSpring-swift/TLImageSpring-swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TLImageSpring_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		418ED250C1024388816FC3B7C9A8340B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B27730AD5C38A03BE2E197082A7C1655 /* Pods-TLImageSpring-swift_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TLImageSpring-swift_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TLImageSpring-swift_Example/Pods-TLImageSpring-swift_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TLImageSpring_swift_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		62D1F422187467DD838E9CFB1267C748 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7359A2A0F7C75396A310EDA18DF4D859 /* TLImageSpring-swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TLImageSpring-swift/TLImageSpring-swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TLImageSpring-swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TLImageSpring-swift/TLImageSpring-swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TLImageSpring_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		80ADADF621E6EFED9B71C9CB451DF3A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F5ED2ED5C39B01203640FAC305DDEC /* Pods-TLImageSpring-swift_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TLImageSpring-swift_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TLImageSpring-swift_Example/Pods-TLImageSpring-swift_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TLImageSpring_swift_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		813E5EF2CCA38D84A35CD71F5BD5C6BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7359A2A0F7C75396A310EDA18DF4D859 /* TLImageSpring-swift.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "TLImageSpring-swift";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B439A59C27DE40000D7BADA0CA455D32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7808DDADE384E65169B530C2B922827 /* Pods-TLImageSpring-swift_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TLImageSpring-swift_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TLImageSpring-swift_Tests/Pods-TLImageSpring-swift_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TLImageSpring_swift_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E9EDE0F059615AD4D0F9A6B2EE3C979C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7359A2A0F7C75396A310EDA18DF4D859 /* TLImageSpring-swift.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "TLImageSpring-swift";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		FB275E6DF22B9032DEBF93A881E8A552 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B27CBFA067DA7EA544C371CAAEB0190 /* Pods-TLImageSpring-swift_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TLImageSpring-swift_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TLImageSpring-swift_Tests/Pods-TLImageSpring-swift_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TLImageSpring_swift_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		06EB9C37084C3D5748071461E384F2F3 /* Build configuration list for PBXNativeTarget "TLImageSpring-swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A9A02690961A418272F0157A1B6332A /* Debug */,
-				62D1F422187467DD838E9CFB1267C748 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
-				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		505728FD47DC4FEDD2DE8D9B8F7942D6 /* Build configuration list for PBXNativeTarget "TLImageSpring-swift-TLImageSpring-swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9EDE0F059615AD4D0F9A6B2EE3C979C /* Debug */,
-				813E5EF2CCA38D84A35CD71F5BD5C6BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD0E4E5FBD7013710476260E947785C3 /* Build configuration list for PBXNativeTarget "Pods-TLImageSpring-swift_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B439A59C27DE40000D7BADA0CA455D32 /* Debug */,
-				FB275E6DF22B9032DEBF93A881E8A552 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA8A160B13B0BBB5AC7A9305D8BA0CD8 /* Build configuration list for PBXNativeTarget "Pods-TLImageSpring-swift_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				80ADADF621E6EFED9B71C9CB451DF3A9 /* Debug */,
-				418ED250C1024388816FC3B7C9A8340B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>003D94B3C1AD359CE0640EBDD15498C1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B27730AD5C38A03BE2E197082A7C1655</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Example/Pods-TLImageSpring-swift_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TLImageSpring_swift_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>01B0FC5177366FB951D40F2B047E7F8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06E7EA62E93F67440F59DEDF130D190D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>361CD581A32BDED68B1DA7BB871CAE15</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>06EB9C37084C3D5748071461E384F2F3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>984872D946E7986295EF0C70F8830755</string>
+				<string>FAA78B50D8E823D955B348F8CC40923C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>09D102157DF12D3D1E93AE096A38D7E7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>81DEC443CD4949F8FF73AE6561F49ED8</string>
+				<string>716543BF8845BCDAB23813E9E597E4DF</string>
+				<string>728536D03B7928B06EE6229069C00B7C</string>
+				<string>AB9232572126E043F703E4A6C9BE381F</string>
+				<string>20F54B900E72A4AC6CE28CF5DFE4B5F5</string>
+				<string>E237B2226693B18882EE8D829178899A</string>
+				<string>01B0FC5177366FB951D40F2B047E7F8F</string>
+				<string>84C8402456B74159222C1FB1DD57C385</string>
+				<string>92F5ED2ED5C39B01203640FAC305DDEC</string>
+				<string>B27730AD5C38A03BE2E197082A7C1655</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TLImageSpring-swift_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TLImageSpring-swift_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B0FEAEE942D451681CB41737BC38A0D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TLImageSpring-swift-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0EF4C20EB63ECBDA0D42352772770737</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>TLImageSpring-swift.bundle</string>
+			<key>path</key>
+			<string>TLImageSpring-swift.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>0F6B66AA567464FB3B9D9739257AA21D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6C70EB4A151E8E68DBCF8A7896CEE9D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>10D3A4F980998DC55DDA423826B4554B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>18C4944E3E8DECA6549D6708972DB5E0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_TLImageSpring_swift_Example.framework</string>
+			<key>path</key>
+			<string>Pods_TLImageSpring_swift_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1941051808C8ADFC26DD7BA6E02DC32A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>488AE7FB66F932D3866BE7797DD4E60D</string>
+				<string>9B120572E4EE01B50B2508D958325B6C</string>
+				<string>D2267E306FF2090099E05AB89AC66F01</string>
+				<string>A9C4A29E716C2D9B11BDE55484AAF429</string>
+				<string>C57B8F936763C3BFEB3991349D72F3E7</string>
+				<string>20903770095292A4578E14581B6AAE0F</string>
+				<string>EE31E1BB367D954F8FF8CAACEADE604B</string>
+				<string>44EFDB377B04D1FEF7CE17BA0E5A8A18</string>
+				<string>DCBEA9793EBFA5E9F260E6BD089518F3</string>
+				<string>4CAE2E1BEDB3F0C97F2B8A600637C667</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>19C7174EAE61A554F91546E00288B922</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1E825FC5ECEFBA140DE5E01809EFA1DE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5F107EBB159F9CA21A530EE53A94741E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>20903770095292A4578E14581B6AAE0F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>444CB5ED15E56967E99CF3007A51722D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>20F54B900E72A4AC6CE28CF5DFE4B5F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>25650A819F380C13B749BE048D79AAD3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>505728FD47DC4FEDD2DE8D9B8F7942D6</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4AD492140AF89F4170F813BBB87C0F42</string>
+				<string>19C7174EAE61A554F91546E00288B922</string>
+				<string>3D786BEA636310D1B12973DCE458B47A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TLImageSpring-swift-TLImageSpring-swift</string>
+			<key>productName</key>
+			<string>TLImageSpring-swift-TLImageSpring-swift</string>
+			<key>productReference</key>
+			<string>0EF4C20EB63ECBDA0D42352772770737</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>2A7E09301CA54BE359D0308CC9A78AEA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>444CB5ED15E56967E99CF3007A51722D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Downloader</string>
+			<key>path</key>
+			<string>Downloader</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2CCFE427C0D57A6B59BDA779DEE1BE4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>TLImageSpring-swift-TLImageSpring-swift</string>
+			<key>target</key>
+			<string>25650A819F380C13B749BE048D79AAD3</string>
+			<key>targetProxy</key>
+			<string>CB41B71E1F8AAB8D2F81AEAC99F1423D</string>
+		</dict>
+		<key>2CE3AB343FA796922B6923869FFB472B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TLThreadUtils.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
+				<string>FB45FFD90572718D82AB9092B750F0CA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>30AAC00F3D2D4EE0472F5CCFC4384CB6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5B78551026FD90992A4057DA8BC0A50A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Manager</string>
+			<key>path</key>
+			<string>Manager</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32ECA0A5C751B118B16CED7CA5163971</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>361CD581A32BDED68B1DA7BB871CAE15</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B27CBFA067DA7EA544C371CAAEB0190</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B2877416D64093133D445259EDD613C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3D786BEA636310D1B12973DCE458B47A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3FAA7D4027A9B788437A0725115BFFE3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>TLImageSpring-swift</string>
+			<key>target</key>
+			<string>67429976F8DEE91E5E2708DB2960607C</string>
+			<key>targetProxy</key>
+			<string>54F87398AE2B8C3802CD002605DB82F9</string>
+		</dict>
+		<key>43A0B482B1C0CD7D47FE06C98545310D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TLImageSpring-swift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>444CB5ED15E56967E99CF3007A51722D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TLImageSpringDownloader.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44915F332F487512F878352A48F8F732</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>18C4944E3E8DECA6549D6708972DB5E0</string>
+				<string>B6EDD5153EED8F750636CCA6B2651577</string>
+				<string>0EF4C20EB63ECBDA0D42352772770737</string>
+				<string>81F9712B210035F3C555B6B067C843B0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44EFDB377B04D1FEF7CE17BA0E5A8A18</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CA4DAF8403F9D5A6581E5EEC3006A236</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>488AE7FB66F932D3866BE7797DD4E60D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F431C6F4C9810C5D9B5EA0C5E6EE51CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>48ED056B687F07DC3BA631E9F3EDF06F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7EB25E32F0F137C48247E8080910EB19</string>
+				<string>A308B0B3D5908CA70D8FFB18061292D9</string>
+				<string>6F834141300B62C598E74D451795767C</string>
+				<string>10D3A4F980998DC55DDA423826B4554B</string>
+				<string>4AFB1EEDD228EFC22D9B31B22557F359</string>
+				<string>A8F96FCD82DE588CB113301489EA9109</string>
+				<string>52D9DCB9BE65E565FB18769AD15506C3</string>
+				<string>32ECA0A5C751B118B16CED7CA5163971</string>
+				<string>A7808DDADE384E65169B530C2B922827</string>
+				<string>3B27CBFA067DA7EA544C371CAAEB0190</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-TLImageSpring-swift_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-TLImageSpring-swift_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4AD492140AF89F4170F813BBB87C0F42</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4AFB1EEDD228EFC22D9B31B22557F359</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4CAE2E1BEDB3F0C97F2B8A600637C667</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BF047FD400DBC545E2083F7D994446AB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>505728FD47DC4FEDD2DE8D9B8F7942D6</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E9EDE0F059615AD4D0F9A6B2EE3C979C</string>
+				<string>813E5EF2CCA38D84A35CD71F5BD5C6BB</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>528353352B642C3BA7FDD2BB9B66A765</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A7808DDADE384E65169B530C2B922827</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Tests/Pods-TLImageSpring-swift_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TLImageSpring_swift_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>52D9DCB9BE65E565FB18769AD15506C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>54F87398AE2B8C3802CD002605DB82F9</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>67429976F8DEE91E5E2708DB2960607C</string>
+			<key>remoteInfo</key>
+			<string>TLImageSpring-swift</string>
+		</dict>
+		<key>5836C2F2DB63CE84860827CB3064C90D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B2877416D64093133D445259EDD613C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5B78551026FD90992A4057DA8BC0A50A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TLImageSpringManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F107EBB159F9CA21A530EE53A94741E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4AFB1EEDD228EFC22D9B31B22557F359</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>67429976F8DEE91E5E2708DB2960607C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>06EB9C37084C3D5748071461E384F2F3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1941051808C8ADFC26DD7BA6E02DC32A</string>
+				<string>CA06A9110D60338C1E50983D8D4F8DC6</string>
+				<string>F7013EE7F64144D923DB7B0A290B5F84</string>
+				<string>FCB8ECE288B3160FDBA4DA18BEB4766A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>2CCFE427C0D57A6B59BDA779DEE1BE4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TLImageSpring-swift</string>
+			<key>productName</key>
+			<string>TLImageSpring-swift</string>
+			<key>productReference</key>
+			<string>81F9712B210035F3C555B6B067C843B0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>67E60CDDC8AEDDDB6512C4BA74F5FB19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TLImageSpring-swift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A7DEEF7AC4F596436B056C5D6A817DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TLImageSpring-swift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6C70EB4A151E8E68DBCF8A7896CEE9D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84C8402456B74159222C1FB1DD57C385</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6D89E23D9B07B027B247D6DF96AF35B5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>86B0499A05B1735FEB5EF569FBB75681</string>
+				<string>CA4DAF8403F9D5A6581E5EEC3006A236</string>
+				<string>2CE3AB343FA796922B6923869FFB472B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utils</string>
+			<key>path</key>
+			<string>Utils</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F834141300B62C598E74D451795767C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F919C9CBE4ACCE2E07D16BB82832F48</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AB2BAA59979560DC098E5FB52B50F88E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>716543BF8845BCDAB23813E9E597E4DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>728536D03B7928B06EE6229069C00B7C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7359A2A0F7C75396A310EDA18DF4D859</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>TLImageSpring-swift.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>FCD0FC3CDE01B26E0957897ABF6964ED</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>44915F332F487512F878352A48F8F732</string>
+				<string>888DDB235BF5B0B308570D1FBBAD85A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EB25E32F0F137C48247E8080910EB19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>800E32548227A7776177C44181CA6FDA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0EF4C20EB63ECBDA0D42352772770737</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>813E5EF2CCA38D84A35CD71F5BD5C6BB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7359A2A0F7C75396A310EDA18DF4D859</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>TLImageSpring-swift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8164DC66B08449531A66B86FD3081D4E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>81BD1C145365C9C044825F9AE2335255</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>String+MD5.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>81DEC443CD4949F8FF73AE6561F49ED8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>81F9712B210035F3C555B6B067C843B0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>TLImageSpring_swift.framework</string>
+			<key>path</key>
+			<string>TLImageSpring_swift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>82274A18DADF362F8452F451BFE81DCA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DA8A160B13B0BBB5AC7A9305D8BA0CD8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E30929B1B8E4E5575F961112E862F78D</string>
+				<string>06E7EA62E93F67440F59DEDF130D190D</string>
+				<string>0F6B66AA567464FB3B9D9739257AA21D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3FAA7D4027A9B788437A0725115BFFE3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TLImageSpring-swift_Example</string>
+			<key>productName</key>
+			<string>Pods-TLImageSpring-swift_Example</string>
+			<key>productReference</key>
+			<string>18C4944E3E8DECA6549D6708972DB5E0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>83CF62924546A13A0E519A19467A1E59</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F21479F68C74D287E3B274D41EF94C41</string>
+				<string>67E60CDDC8AEDDDB6512C4BA74F5FB19</string>
+				<string>7359A2A0F7C75396A310EDA18DF4D859</string>
+				<string>43A0B482B1C0CD7D47FE06C98545310D</string>
+				<string>0B0FEAEE942D451681CB41737BC38A0D</string>
+				<string>6A7DEEF7AC4F596436B056C5D6A817DF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/TLImageSpring-swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84C8402456B74159222C1FB1DD57C385</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>850FB51D9CC0D626789697DE9694AE0A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3B27CBFA067DA7EA544C371CAAEB0190</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Tests/Pods-TLImageSpring-swift_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TLImageSpring_swift_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>86B0499A05B1735FEB5EF569FBB75681</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TLGlobalConfig.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>888DDB235BF5B0B308570D1FBBAD85A0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>09D102157DF12D3D1E93AE096A38D7E7</string>
+				<string>48ED056B687F07DC3BA631E9F3EDF06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92F5ED2ED5C39B01203640FAC305DDEC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>984872D946E7986295EF0C70F8830755</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7359A2A0F7C75396A310EDA18DF4D859</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TLImageSpring-swift/TLImageSpring-swift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/TLImageSpring-swift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/TLImageSpring-swift/TLImageSpring-swift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>TLImageSpring_swift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9B120572E4EE01B50B2508D958325B6C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>81BD1C145365C9C044825F9AE2335255</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A308B0B3D5908CA70D8FFB18061292D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A7808DDADE384E65169B530C2B922827</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A8F96FCD82DE588CB113301489EA9109</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A93D9CB1E86774B885B8DD47313C2CC7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D8093FA2CAEE3F327BE7E6DDECF0A469</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A9C4A29E716C2D9B11BDE55484AAF429</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C841983E728527E3E875EF8F2B7F9BF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AB2BAA59979560DC098E5FB52B50F88E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D8668A429BD2468A9B18B51A7A208787</string>
+				<string>B83BD0E768C33C222099FF817664B07B</string>
+				<string>2A7E09301CA54BE359D0308CC9A78AEA</string>
+				<string>30AAC00F3D2D4EE0472F5CCFC4384CB6</string>
+				<string>6D89E23D9B07B027B247D6DF96AF35B5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB9232572126E043F703E4A6C9BE381F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD0E4E5FBD7013710476260E947785C3</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>528353352B642C3BA7FDD2BB9B66A765</string>
+				<string>850FB51D9CC0D626789697DE9694AE0A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B27730AD5C38A03BE2E197082A7C1655</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B6EDD5153EED8F750636CCA6B2651577</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_TLImageSpring_swift_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_TLImageSpring_swift_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B83BD0E768C33C222099FF817664B07B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F431C6F4C9810C5D9B5EA0C5E6EE51CE</string>
+				<string>81BD1C145365C9C044825F9AE2335255</string>
+				<string>BF047FD400DBC545E2083F7D994446AB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Categories</string>
+			<key>path</key>
+			<string>Categories</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF047FD400DBC545E2083F7D994446AB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>UIbutton+TLImageSpring.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C57B8F936763C3BFEB3991349D72F3E7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>43A0B482B1C0CD7D47FE06C98545310D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C841983E728527E3E875EF8F2B7F9BF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TLImageCache.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA06A9110D60338C1E50983D8D4F8DC6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>8164DC66B08449531A66B86FD3081D4E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CA4DAF8403F9D5A6581E5EEC3006A236</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TLNetworkActivityIndicator.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB41B71E1F8AAB8D2F81AEAC99F1423D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>25650A819F380C13B749BE048D79AAD3</string>
+			<key>remoteInfo</key>
+			<string>TLImageSpring-swift-TLImageSpring-swift</string>
+		</dict>
+		<key>CB4A89A1FDF82ACF4CB63EA2AFD0265B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>20F54B900E72A4AC6CE28CF5DFE4B5F5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D2267E306FF2090099E05AB89AC66F01</key>
+		<dict>
+			<key>fileRef</key>
+			<string>86B0499A05B1735FEB5EF569FBB75681</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>44915F332F487512F878352A48F8F732</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>82274A18DADF362F8452F451BFE81DCA</string>
+				<string>F61B92BA75991544ECA7A3FD53419FA6</string>
+				<string>67429976F8DEE91E5E2708DB2960607C</string>
+				<string>25650A819F380C13B749BE048D79AAD3</string>
+			</array>
+		</dict>
+		<key>D45396D125B17FCB273ECBDAD1B1C190</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>92F5ED2ED5C39B01203640FAC305DDEC</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-TLImageSpring-swift_Example/Pods-TLImageSpring-swift_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_TLImageSpring_swift_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D8093FA2CAEE3F327BE7E6DDECF0A469</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32ECA0A5C751B118B16CED7CA5163971</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D8668A429BD2468A9B18B51A7A208787</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C841983E728527E3E875EF8F2B7F9BF1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Cache</string>
+			<key>path</key>
+			<string>Cache</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA8A160B13B0BBB5AC7A9305D8BA0CD8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D45396D125B17FCB273ECBDAD1B1C190</string>
+				<string>003D94B3C1AD359CE0640EBDD15498C1</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DCBEA9793EBFA5E9F260E6BD089518F3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2CE3AB343FA796922B6923869FFB472B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E237B2226693B18882EE8D829178899A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-TLImageSpring-swift_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E30929B1B8E4E5575F961112E862F78D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CB4A89A1FDF82ACF4CB63EA2AFD0265B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E9EDE0F059615AD4D0F9A6B2EE3C979C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7359A2A0F7C75396A310EDA18DF4D859</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>TLImageSpring-swift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ECF3CFD32F2E4358F345F065827490EB</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>67429976F8DEE91E5E2708DB2960607C</string>
+			<key>remoteInfo</key>
+			<string>TLImageSpring-swift</string>
+		</dict>
+		<key>EE31E1BB367D954F8FF8CAACEADE604B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B78551026FD90992A4057DA8BC0A50A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F1D09A6D2988CB185495E56DF8736A4A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>TLImageSpring-swift</string>
+			<key>target</key>
+			<string>67429976F8DEE91E5E2708DB2960607C</string>
+			<key>targetProxy</key>
+			<string>ECF3CFD32F2E4358F345F065827490EB</string>
+		</dict>
+		<key>F21479F68C74D287E3B274D41EF94C41</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F431C6F4C9810C5D9B5EA0C5E6EE51CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ImageView+TLImageSpring.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F49712D22620B267F686A63F60DAE335</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6A7DEEF7AC4F596436B056C5D6A817DF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F61B92BA75991544ECA7A3FD53419FA6</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>AD0E4E5FBD7013710476260E947785C3</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1E825FC5ECEFBA140DE5E01809EFA1DE</string>
+				<string>5836C2F2DB63CE84860827CB3064C90D</string>
+				<string>A93D9CB1E86774B885B8DD47313C2CC7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F1D09A6D2988CB185495E56DF8736A4A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-TLImageSpring-swift_Tests</string>
+			<key>productName</key>
+			<string>Pods-TLImageSpring-swift_Tests</string>
+			<key>productReference</key>
+			<string>B6EDD5153EED8F750636CCA6B2651577</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>F7013EE7F64144D923DB7B0A290B5F84</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>800E32548227A7776177C44181CA6FDA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FA51DC111A24C8AB55234127EF45B708</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F919C9CBE4ACCE2E07D16BB82832F48</string>
+				<string>83CF62924546A13A0E519A19467A1E59</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TLImageSpring-swift</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAA78B50D8E823D955B348F8CC40923C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7359A2A0F7C75396A310EDA18DF4D859</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/TLImageSpring-swift/TLImageSpring-swift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/TLImageSpring-swift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/TLImageSpring-swift/TLImageSpring-swift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>TLImageSpring_swift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FB45FFD90572718D82AB9092B750F0CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FCB8ECE288B3160FDBA4DA18BEB4766A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F49712D22620B267F686A63F60DAE335</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>FCD0FC3CDE01B26E0957897ABF6964ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA51DC111A24C8AB55234127EF45B708</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

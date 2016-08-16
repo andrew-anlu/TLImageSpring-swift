@@ -1,5 +1,5 @@
 PODS:
-  - TLImageSpring-swift (0.0.1)
+  - TLImageSpring-swift (1.0.1)
 
 DEPENDENCIES:
   - TLImageSpring-swift (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TLImageSpring-swift: 9773e8251cd01d2521008cf170f6e04b9c2b6cbf
+  TLImageSpring-swift: 1f155df2a5ef9a58674d7bca83b0d03d49a3b25a
 
 COCOAPODS: 0.39.0
