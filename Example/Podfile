@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TLImageSpring_Example' do
+  pod 'TLImageSpring', :path => '../'
+
+  target 'TLImageSpring_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
