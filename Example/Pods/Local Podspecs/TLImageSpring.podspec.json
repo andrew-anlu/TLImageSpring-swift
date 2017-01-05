@@ -1,0 +1,22 @@
+{
+  "name": "TLImageSpring",
+  "version": "0.1.0",
+  "summary": "A light framework for download image from web and supports catch function",
+  "description": "A light framework for download image from web and supports catch function",
+  "homepage": "https://github.com/andrew-anlu/TLImageSpring",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Andrew": "anluanlu123@163.com"
+  },
+  "source": {
+    "git": "https://github.com/andrew-anlu/TLImageSpring.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TLImageSpring/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - TLImageSpring (0.1.0)
+
+DEPENDENCIES:
+  - TLImageSpring (from `../`)
+
+EXTERNAL SOURCES:
+  TLImageSpring:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TLImageSpring: 84bb9e30274e90627f8690263a0612fe7bbb89f0
+
+PODFILE CHECKSUM: 52db88aa6d619e4e89e1c0e263bce5bb034bf05c
+
+COCOAPODS: 1.1.1

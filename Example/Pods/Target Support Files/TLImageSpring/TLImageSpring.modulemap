@@ -1,0 +1,6 @@
+framework module TLImageSpring {
+  umbrella header "TLImageSpring-umbrella.h"
+
+  export *
+  module * { export * }
+}
