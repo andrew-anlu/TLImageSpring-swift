@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		222E06D59D3ED8C11F737C9789AD9079 /* TLImageSpring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAD3B3B770A43B8788B195E51C6D648 /* TLImageSpring-dummy.m */; };
+		0E3AD2444E2369C68B3BB0D4C3AA828B /* TLImageSpring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAD3B3B770A43B8788B195E51C6D648 /* TLImageSpring-dummy.m */; };
 		4734BCDDE1ECCE78D3918E9E7A885DA3 /* TLImageSpring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4366F21D27DC12A4726A63D8DBE677F7 /* TLImageSpring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D6C4A46EB106F5F342CB7A5DDFEC7C /* TLImageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F04741FF118CDC29EFF0263BBE1F85 /* TLImageConfig.swift */; };
 		57C261D99EF88F610BC716B8D5F04B0D /* Pods-TLImageSpring_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1461C4FC23F33B5426B4BF1B58F3BF2 /* Pods-TLImageSpring_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D31ABAC814D4FADCD678BB7FC62C458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6E1884A5086541EF601F9D0D2C2F3BE8 /* TLImageSpringDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44FB376CC52ABE5DEB32A3C6497AF6 /* TLImageSpringDownloader.swift */; };
+		8E1C4F48E89FAC6855FDA31EA42FF1FA /* TLImageSpringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BCED2D2910CD2DEA130212D71D1BA6 /* TLImageSpringManager.swift */; };
+		9FDECBA4984280F1F333917CC08BFF04 /* TLActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2F9821BD31B9969E3B439924B7E7F /* TLActivityIndicator.swift */; };
 		A31DCCBD1C197F0812EAB37FC5053270 /* Pods-TLImageSpring_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2686AEFE7A633C021C78CE1611D19440 /* Pods-TLImageSpring_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6C34AE3672A484191BF8035717E8741 /* RetrieveImageTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA79C6416FBA23CED3BE0A1D41FF52 /* RetrieveImageTask.swift */; };
 		ACCD25B4CC4DDC1FD82CE1CEC03A5DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		B73EFDF7049DEFDECFE6A53316C5DBC1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743D763CDDD61FAD622FF400D20EBDAD /* ReplaceMe.swift */; };
+		AF0CD4676737B5BBEF0D8FD27296A72B /* ImageView+TLImageSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83037B7822D1C3BD74F5469FFF5E893 /* ImageView+TLImageSpring.swift */; };
+		B009E5F4BCF8D5E5004B909FF2889B65 /* TLImageThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7180EE76E36C50D46B9DFF1B0621D0FB /* TLImageThread.swift */; };
+		B4696C5529770956A276169572E244D3 /* TLImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5571A5C3ECACEC08659EB48082868AAD /* TLImageCache.swift */; };
+		BE5B671FEADCDBD2E95CFB53A27E119C /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9780CD83BC89A3C25327092E448512 /* String+MD5.swift */; };
 		C1D9D0C5EC16DBBF1FF74E21AB1D6916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		CB685140482B72D5E09813225E6B53E4 /* Pods-TLImageSpring_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5897BE29A0C0C9F4C58854E2444B3CF0 /* Pods-TLImageSpring_Tests-dummy.m */; };
 		D7585A52D5778BB957840C3DB9712EF2 /* Pods-TLImageSpring_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D35529EDB2B9D4876B2B0351993E502B /* Pods-TLImageSpring_Example-dummy.m */; };
-		E5CE43F2AAC9FEFA52CA54CFF223EB44 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = B088CD84E2BE9FDA2E25F3CB6F249AD1 /* Spring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,27 +50,34 @@
 		2686AEFE7A633C021C78CE1611D19440 /* Pods-TLImageSpring_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TLImageSpring_Example-umbrella.h"; sourceTree = "<group>"; };
 		2E1EB1167E9CAB79C0E655164C5A2EB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4366F21D27DC12A4726A63D8DBE677F7 /* TLImageSpring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TLImageSpring-umbrella.h"; sourceTree = "<group>"; };
+		5571A5C3ECACEC08659EB48082868AAD /* TLImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageCache.swift; sourceTree = "<group>"; };
 		588A4FD0CE16F3E754FD03124988D2F0 /* Pods-TLImageSpring_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TLImageSpring_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5897BE29A0C0C9F4C58854E2444B3CF0 /* Pods-TLImageSpring_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TLImageSpring_Tests-dummy.m"; sourceTree = "<group>"; };
 		5B42D3B680591952E5D5BB282C66540B /* Pods-TLImageSpring_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TLImageSpring_Example.modulemap"; sourceTree = "<group>"; };
 		68FC5F9F0D0E58ADF70C06EF411D632B /* Pods-TLImageSpring_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TLImageSpring_Tests.modulemap"; sourceTree = "<group>"; };
-		743D763CDDD61FAD622FF400D20EBDAD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		7180EE76E36C50D46B9DFF1B0621D0FB /* TLImageThread.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageThread.swift; sourceTree = "<group>"; };
+		76BA79C6416FBA23CED3BE0A1D41FF52 /* RetrieveImageTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RetrieveImageTask.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A8BB6B0EC7BDC4410AE3C7C1046862A /* TLImageSpring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TLImageSpring.framework; path = TLImageSpring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F953D4D829EBCFAC35092F70BA1BB53 /* Pods-TLImageSpring_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TLImageSpring_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A4C014CCA11798C8A9BB6282738B28B6 /* TLImageSpring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TLImageSpring.modulemap; sourceTree = "<group>"; };
-		B088CD84E2BE9FDA2E25F3CB6F249AD1 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		B0F04741FF118CDC29EFF0263BBE1F85 /* TLImageConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageConfig.swift; sourceTree = "<group>"; };
 		C1461C4FC23F33B5426B4BF1B58F3BF2 /* Pods-TLImageSpring_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TLImageSpring_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBBA82E4F43D279F1EA3C8C058A7CBDA /* Pods-TLImageSpring_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLImageSpring_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC8E6E50C51F64820A8C8C9ECF865782 /* Pods-TLImageSpring_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TLImageSpring_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D1ED4F3FD3A43D36EAFC74E1CDE6CB1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D35529EDB2B9D4876B2B0351993E502B /* Pods-TLImageSpring_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TLImageSpring_Example-dummy.m"; sourceTree = "<group>"; };
+		DA44FB376CC52ABE5DEB32A3C6497AF6 /* TLImageSpringDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageSpringDownloader.swift; sourceTree = "<group>"; };
 		DBAD3B3B770A43B8788B195E51C6D648 /* TLImageSpring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TLImageSpring-dummy.m"; sourceTree = "<group>"; };
 		E301ED26F884CE00168ED8E432337593 /* Pods-TLImageSpring_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TLImageSpring_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E83037B7822D1C3BD74F5469FFF5E893 /* ImageView+TLImageSpring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ImageView+TLImageSpring.swift"; sourceTree = "<group>"; };
 		E9D7DDAC3406DB0293C45E111B55C207 /* TLImageSpring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TLImageSpring.xcconfig; sourceTree = "<group>"; };
 		EB4B696FFD07315FF4F7A5DA263BAA2D /* Pods_TLImageSpring_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TLImageSpring_Tests.framework; path = "Pods-TLImageSpring_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF2F9821BD31B9969E3B439924B7E7F /* TLActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLActivityIndicator.swift; sourceTree = "<group>"; };
+		F7BCED2D2910CD2DEA130212D71D1BA6 /* TLImageSpringManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TLImageSpringManager.swift; sourceTree = "<group>"; };
 		FB744D7C2396F722BC384AF54A46A4AF /* Pods-TLImageSpring_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TLImageSpring_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB9780CD83BC89A3C25327092E448512 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +108,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C980319643A86FD78E2747B14398B9A /* Classes */ = {
+		20F1E205A9D5D9B73FBED982B0FA80C2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				743D763CDDD61FAD622FF400D20EBDAD /* ReplaceMe.swift */,
-				B088CD84E2BE9FDA2E25F3CB6F249AD1 /* Spring.swift */,
+				E83037B7822D1C3BD74F5469FFF5E893 /* ImageView+TLImageSpring.swift */,
 			);
-			name = Classes;
-			path = Classes;
+			name = Categories;
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4CD80AE41F6BDE466B8B084E19D1B19E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB9780CD83BC89A3C25327092E448512 /* String+MD5.swift */,
+				EEF2F9821BD31B9969E3B439924B7E7F /* TLActivityIndicator.swift */,
+				B0F04741FF118CDC29EFF0263BBE1F85 /* TLImageConfig.swift */,
+				7180EE76E36C50D46B9DFF1B0621D0FB /* TLImageThread.swift */,
+			);
+			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		4F60BA064F827490D516E063AA6C1F0D /* Pods-TLImageSpring_Tests */ = {
@@ -136,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CE916D4981374899FEB76EA0EFA15315 /* Support Files */,
-				8ACED51792CFB3CE21AF12040F0B74AF /* TLImageSpring */,
+				C19462055E8FCDDE535830EA02D2F110 /* TLImageSpring */,
 			);
 			name = TLImageSpring;
 			path = ../..;
@@ -150,6 +175,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		772F0695644B6223743F1620E326CEE9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76BA79C6416FBA23CED3BE0A1D41FF52 /* RetrieveImageTask.swift */,
+				5571A5C3ECACEC08659EB48082868AAD /* TLImageCache.swift */,
+				DA44FB376CC52ABE5DEB32A3C6497AF6 /* TLImageSpringDownloader.swift */,
+				F7BCED2D2910CD2DEA130212D71D1BA6 /* TLImageSpringManager.swift */,
+				20F1E205A9D5D9B73FBED982B0FA80C2 /* Categories */,
+				4CD80AE41F6BDE466B8B084E19D1B19E /* Utils */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -159,15 +198,6 @@
 				605800C8D87CDB1EA09238F79A9486C1 /* Products */,
 				BF8EED2524B9EB9F97C80A281FDEA31B /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8ACED51792CFB3CE21AF12040F0B74AF /* TLImageSpring */ = {
-			isa = PBXGroup;
-			children = (
-				2C980319643A86FD78E2747B14398B9A /* Classes */,
-			);
-			name = TLImageSpring;
-			path = TLImageSpring;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -185,6 +215,15 @@
 				4F60BA064F827490D516E063AA6C1F0D /* Pods-TLImageSpring_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C19462055E8FCDDE535830EA02D2F110 /* TLImageSpring */ = {
+			isa = PBXGroup;
+			children = (
+				772F0695644B6223743F1620E326CEE9 /* Classes */,
+			);
+			name = TLImageSpring;
+			path = TLImageSpring;
 			sourceTree = "<group>";
 		};
 		C9C2647F8251C6993C58118821A6CA82 /* Development Pods */ = {
@@ -261,7 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E99AFEF8550D86292480B917ABB9071 /* Build configuration list for PBXNativeTarget "TLImageSpring" */;
 			buildPhases = (
-				65EA436338F8FB03199DA7D4AB1E79BA /* Sources */,
+				3989BCEF2D1434CCB5DF77A902341486 /* Sources */,
 				F782A080D92C616DEF1ED3227FA6D22B /* Frameworks */,
 				48901A3E18F9BD3B628A8457355BE93A /* Headers */,
 			);
@@ -346,13 +385,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65EA436338F8FB03199DA7D4AB1E79BA /* Sources */ = {
+		3989BCEF2D1434CCB5DF77A902341486 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B73EFDF7049DEFDECFE6A53316C5DBC1 /* ReplaceMe.swift in Sources */,
-				E5CE43F2AAC9FEFA52CA54CFF223EB44 /* Spring.swift in Sources */,
-				222E06D59D3ED8C11F737C9789AD9079 /* TLImageSpring-dummy.m in Sources */,
+				AF0CD4676737B5BBEF0D8FD27296A72B /* ImageView+TLImageSpring.swift in Sources */,
+				A6C34AE3672A484191BF8035717E8741 /* RetrieveImageTask.swift in Sources */,
+				BE5B671FEADCDBD2E95CFB53A27E119C /* String+MD5.swift in Sources */,
+				9FDECBA4984280F1F333917CC08BFF04 /* TLActivityIndicator.swift in Sources */,
+				B4696C5529770956A276169572E244D3 /* TLImageCache.swift in Sources */,
+				53D6C4A46EB106F5F342CB7A5DDFEC7C /* TLImageConfig.swift in Sources */,
+				0E3AD2444E2369C68B3BB0D4C3AA828B /* TLImageSpring-dummy.m in Sources */,
+				6E1884A5086541EF601F9D0D2C2F3BE8 /* TLImageSpringDownloader.swift in Sources */,
+				8E1C4F48E89FAC6855FDA31EA42FF1FA /* TLImageSpringManager.swift in Sources */,
+				B009E5F4BCF8D5E5004B909FF2889B65 /* TLImageThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

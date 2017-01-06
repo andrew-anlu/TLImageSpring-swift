@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49DEDC541E1F3F0E00F71D27 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DEDC531E1F3F0E00F71D27 /* CustomTableView.swift */; };
+		49DEDC571E1F411100F71D27 /* NormalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DEDC561E1F411100F71D27 /* NormalController.swift */; };
+		49DEDC591E1F423900F71D27 /* sea.png in Resources */ = {isa = PBXBuildFile; fileRef = 49DEDC581E1F423900F71D27 /* sea.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 		02CC92DDDF4C519BC469DA88 /* TLImageSpring.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TLImageSpring.podspec; path = ../TLImageSpring.podspec; sourceTree = "<group>"; };
 		1F359AE0A880E94148889178 /* Pods-TLImageSpring_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLImageSpring_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLImageSpring_Tests/Pods-TLImageSpring_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2D3FA02A9A7FC8DF70DB4475 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		49DEDC531E1F3F0E00F71D27 /* CustomTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		49DEDC561E1F411100F71D27 /* NormalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalController.swift; sourceTree = "<group>"; };
+		49DEDC581E1F423900F71D27 /* sea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sea.png; sourceTree = "<group>"; };
 		5FFE6EE4B7EF553D0047B8A8 /* Pods-TLImageSpring_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLImageSpring_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLImageSpring_Tests/Pods-TLImageSpring_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TLImageSpring_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLImageSpring_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49DEDC521E1F3EE900F71D27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49DEDC531E1F3F0E00F71D27 /* CustomTableView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		49DEDC551E1F40FC00F71D27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49DEDC561E1F411100F71D27 /* NormalController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +115,10 @@
 		607FACD21AFB9204008FA782 /* Example for TLImageSpring */ = {
 			isa = PBXGroup;
 			children = (
+				49DEDC551E1F40FC00F71D27 /* Controller */,
+				49DEDC521E1F3EE900F71D27 /* View */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for TLImageSpring";
@@ -107,6 +128,10 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				49DEDC581E1F423900F71D27 /* sea.png */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -249,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49DEDC591E1F423900F71D27 /* sea.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -364,6 +390,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				49DEDC571E1F411100F71D27 /* NormalController.swift in Sources */,
+				49DEDC541E1F3F0E00F71D27 /* CustomTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

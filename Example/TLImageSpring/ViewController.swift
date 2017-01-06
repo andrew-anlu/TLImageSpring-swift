@@ -9,21 +9,25 @@
 import UIKit
 import TLImageSpring
 
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
+
 class ViewController: UIViewController {
+    
+    var tableView:CustomTableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.white
         
-        let s = Spring()
-        s.HelloWorld()
+        let rect = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
+        tableView = CustomTableView(frame: rect, style: .plain)
+        tableView.navigationController = self.navigationController
+        self.view.addSubview(tableView)
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }
 
