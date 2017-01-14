@@ -16,7 +16,7 @@ private var tlImageTaskKey:Void?
 /// 存储运行时UIActivityIndicatorView的key
 private var tlImageIndicatorViewKey:Void?
 
-private var indicatorView:UIActivityIndicatorView?
+//private var indicatorView:UIActivityIndicatorView?
 
 
 //MARK: - 对TLImageSrping进行扩展
@@ -49,8 +49,10 @@ extension TLImageSpring where Base:UIImageView{
             return .empty
         }
         
-        let maybeIndicator = self.indicatorView
-        maybeIndicator?.startAnimating()
+        self.indicatorView = createIndicatorView()
+        self.indicatorView?.startAnimating()
+        
+        print("self.indicatorView:\(self.indicatorView)")
         
         //把图片的服务器地址绑定到运行时
         self.setImageWithURL(param.downloadURL)
@@ -73,6 +75,7 @@ extension TLImageSpring where Base:UIImageView{
 //              return
 //            }
             //让转子停止动画
+           
             let activityIndicator = self.indicatorView
             
             DispatchQueue.main.async(execute: { () -> Void in
@@ -181,9 +184,10 @@ extension TLImageSpring where Base:UIImageView{
             }
             //Add new
             if var newIndicator = newValue{
-              newIndicator.frame = base.frame
-                newIndicator.center = base.center
+                newIndicator.frame = CGRect(x: 0, y: 0, width: base.frame.size.width, height: base.frame.size.height)
+                print("newIndicator.center:\(newIndicator.center)")
                 base.addSubview(newIndicator)
+                
             }
                objc_setAssociatedObject(self, &tlImageIndicatorViewKey, indicatorView, .OBJC_ASSOCIATION_RETAIN)
         }
@@ -192,6 +196,18 @@ extension TLImageSpring where Base:UIImageView{
     
     fileprivate func  setIndicatorView(_ activityIndicator:UIActivityIndicatorView?){
         objc_setAssociatedObject(self, &tlImageIndicatorViewKey, activityIndicator, .OBJC_ASSOCIATION_RETAIN)
+    }
+    
+    func createIndicatorView() -> UIActivityIndicatorView {
+        let indicatorView =  UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        indicatorView.hidesWhenStopped = true
+        indicatorView.frame = CGRect(x: 0, y: 0, width: base.frame.size.width, height: base.frame.size.height)
+//        self.base.addSubview(indicatorView)
+        
+        indicatorView.backgroundColor = UIColor.red
+        
+        print("self.base.frame:\(self.base.frame);indicatorView.frame:\(indicatorView.frame)")
+        return indicatorView
     }
     
 }

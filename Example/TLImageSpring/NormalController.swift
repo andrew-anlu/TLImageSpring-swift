@@ -54,6 +54,8 @@ class NormalController: UIViewController {
         imageView = UIImageView(frame: CGRect(x: 0, y: 200, width: 200, height: 200))
         self.view.addSubview(imageView)
         
+        imageView.backgroundColor = UIColor.blue
+        
         
         rect = CGRect(x: 20, y: btn1.frame.maxY+10, width: 100, height: 30)
         let clearBtn = UIButton(frame: rect)
